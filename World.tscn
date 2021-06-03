@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://Player/Chasen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://World/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Friends/Bingus.tscn" type="PackedScene" id=8]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -507,11 +508,7 @@ tile_data = PoolIntArray( -65536, 0, 4, -65535, 0, 196609, -65534, 0, 196609, -6
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Chasen" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 160, 56 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Camera2D" type="Camera2D" parent="YSort/Chasen"]
-current = true
+position = Vector2( 160, 80 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 
@@ -533,3 +530,6 @@ position = Vector2( 112, 24 )
 
 [node name="Tree" parent="YSort/Trees" instance=ExtResource( 7 )]
 position = Vector2( 152, 24 )
+
+[node name="Bingus" parent="." instance=ExtResource( 8 )]
+position = Vector2( 72, 232 )

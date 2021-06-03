@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player/Chasen.png" type="Texture" id=1]
 [ext_resource path="res://Player/Chasen.gd" type="Script" id=2]
+[ext_resource path="res://Player/InteractionComponent.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Dialogue/DialogueBox.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.99999
 height = 10.0
 
 [node name="Chasen" type="KinematicBody2D"]
+scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -18,6 +21,15 @@ position = Vector2( 0, -15.75 )
 scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 1 )
 
+[node name="InteractionComponent" parent="Sprite" instance=ExtResource( 3 )]
+interaction_parent = NodePath("../..")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708
 shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="BingusDialogue" parent="Camera2D" instance=ExtResource( 4 )]
+visible = false

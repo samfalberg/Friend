@@ -1,4 +1,5 @@
 extends KinematicBody2D
+class_name Player
 
 const MAX_SPEED = 100
 
@@ -16,8 +17,8 @@ func _physics_process(_delta):
 		velocity = Vector2.ZERO
 		
 	if input_vector.x < 0:
-		get_node("Sprite").flip_h = true
+		$Sprite.set_scale(Vector2(-abs($Sprite.get_scale().x), $Sprite.get_scale().y))
 	elif input_vector.x > 0:
-		get_node("Sprite").flip_h = false
+		$Sprite.set_scale(Vector2(abs($Sprite.get_scale().x), $Sprite.get_scale().y))
 		
 	velocity = move_and_slide(velocity)
