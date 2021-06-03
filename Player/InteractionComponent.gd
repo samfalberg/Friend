@@ -5,16 +5,18 @@ export var interaction_parent : NodePath
 signal on_interactable_changed(newInteractable)
 
 var interaction_target : Node
+const BINGUS_DIALOGUE = preload("res://Dialogue/DialogueBox.tscn")
 
 # Called every frame
-func _process(delta):
+func _process(_delta):
 	# Check whether the player is trying to interact
 	if (interaction_target != null and Input.is_action_just_pressed("Interact")):
 		# If so, we'll call interaction_interact() if our target supports it
 		if (interaction_target is Friend):
 			match interaction_target.name:
 				"Bingus":
-					(get_parent().get_parent().get_child(2).get_child(0)).visible = not (get_parent().get_parent().get_child(2).get_child(0)).visible
+					var dialogue = BINGUS_DIALOGUE.instance()
+					get_parent().get_parent().get_child(2).add_child(dialogue)
 				"Floppa":
 					print("you\'re talking to floppa")
 

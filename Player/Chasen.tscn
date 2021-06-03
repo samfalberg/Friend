@@ -33,3 +33,4 @@ current = true
 
 [node name="BingusDialogue" parent="Camera2D" instance=ExtResource( 4 )]
 visible = false
+polygon = PoolVector2Array( -304, 128, -304, 160, 304, 160, 304, 128 )

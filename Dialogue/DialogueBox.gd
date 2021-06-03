@@ -10,13 +10,15 @@ func _ready():
 	set_visible_characters(0)
 	set_process_input(true)
 	
-func _input(event):
+func _input(_event):
 	if Input.is_mouse_button_pressed(1):
 		if get_visible_characters() >= get_total_character_count():
 			if page < dialogue.size() - 1:
 				page += 1
 				set_bbcode(dialogue[page])
 				set_visible_characters(0)
+			else:
+				get_parent().queue_free()
 		else:
 			set_visible_characters(get_total_character_count())
 
