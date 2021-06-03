@@ -3,6 +3,7 @@
 [ext_resource path="res://World/Grass.png" type="Texture" id=1]
 
 [node name="Grass" type="Node2D"]
+scale = Vector2( 0.8, 0.8 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
