@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://Player/Chasen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://World/Bush.png" type="Texture" id=9]
 [ext_resource path="res://World/Grass.png" type="Texture" id=10]
 [ext_resource path="res://World/Tree.png" type="Texture" id=11]
+[ext_resource path="res://Friends/Floppa.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Friends/Laney.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Friends/Carter.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Friends/Harrow.tscn" type="PackedScene" id=15]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -1130,104 +1134,104 @@ texture = ExtResource( 11 )
 position = Vector2( 440, 1008 )
 texture = ExtResource( 11 )
 
+[node name="Tree30" type="Sprite" parent="YSort/Trees"]
+position = Vector2( 240, 1184 )
+texture = ExtResource( 11 )
+
+[node name="Tree31" type="Sprite" parent="YSort/Trees"]
+position = Vector2( 128, 1216 )
+texture = ExtResource( 11 )
+
+[node name="Tree32" type="Sprite" parent="YSort/Trees"]
+position = Vector2( 184, 1208 )
+texture = ExtResource( 11 )
+
+[node name="Tree33" type="Sprite" parent="YSort/Trees"]
+position = Vector2( 32, 1192 )
+texture = ExtResource( 11 )
+
+[node name="Tree34" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -88, 1192 )
+texture = ExtResource( 11 )
+
+[node name="Tree35" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -120, 1136 )
+texture = ExtResource( 11 )
+
+[node name="Tree36" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -200, 1080 )
+texture = ExtResource( 11 )
+
+[node name="Tree37" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -120, 952 )
+texture = ExtResource( 11 )
+
+[node name="Tree38" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -88, 944 )
+texture = ExtResource( 11 )
+
+[node name="Tree39" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -96, 976 )
+texture = ExtResource( 11 )
+
+[node name="Tree40" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -176, 912 )
+texture = ExtResource( 11 )
+
+[node name="Tree41" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -64, 896 )
+texture = ExtResource( 11 )
+
+[node name="Tree42" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -16, 808 )
+texture = ExtResource( 11 )
+
+[node name="Tree43" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -104, 808 )
+texture = ExtResource( 11 )
+
+[node name="Tree44" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -72, 672 )
+texture = ExtResource( 11 )
+
+[node name="Tree45" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -168, 720 )
+texture = ExtResource( 11 )
+
+[node name="Tree46" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -184, 552 )
+texture = ExtResource( 11 )
+
+[node name="Tree47" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -72, 464 )
+texture = ExtResource( 11 )
+
+[node name="Tree48" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -168, 416 )
+texture = ExtResource( 11 )
+
+[node name="Tree49" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -200, 392 )
+texture = ExtResource( 11 )
+
+[node name="Tree50" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -48, 336 )
+texture = ExtResource( 11 )
+
+[node name="Tree51" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -160, 264 )
+texture = ExtResource( 11 )
+
+[node name="Tree52" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -40, 184 )
+texture = ExtResource( 11 )
+
+[node name="Tree53" type="Sprite" parent="YSort/Trees"]
+position = Vector2( -96, -136 )
+texture = ExtResource( 11 )
+
 [node name="Tree28" type="Sprite" parent="YSort/Trees"]
 position = Vector2( 360, 1096 )
-texture = ExtResource( 11 )
-
-[node name="Tree" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -120, 88 )
-texture = ExtResource( 11 )
-
-[node name="Tree2" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -232, 120 )
-texture = ExtResource( 11 )
-
-[node name="Tree3" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -176, 112 )
-texture = ExtResource( 11 )
-
-[node name="Tree4" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -328, 96 )
-texture = ExtResource( 11 )
-
-[node name="Tree5" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -448, 96 )
-texture = ExtResource( 11 )
-
-[node name="Tree6" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -480, 40 )
-texture = ExtResource( 11 )
-
-[node name="Tree7" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -560, -16 )
-texture = ExtResource( 11 )
-
-[node name="Tree8" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -480, -144 )
-texture = ExtResource( 11 )
-
-[node name="Tree9" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -448, -152 )
-texture = ExtResource( 11 )
-
-[node name="Tree10" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -456, -120 )
-texture = ExtResource( 11 )
-
-[node name="Tree11" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -536, -184 )
-texture = ExtResource( 11 )
-
-[node name="Tree12" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -424, -200 )
-texture = ExtResource( 11 )
-
-[node name="Tree13" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -376, -288 )
-texture = ExtResource( 11 )
-
-[node name="Tree14" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -464, -288 )
-texture = ExtResource( 11 )
-
-[node name="Tree15" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -432, -424 )
-texture = ExtResource( 11 )
-
-[node name="Tree16" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -528, -376 )
-texture = ExtResource( 11 )
-
-[node name="Tree17" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -544, -544 )
-texture = ExtResource( 11 )
-
-[node name="Tree18" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -432, -632 )
-texture = ExtResource( 11 )
-
-[node name="Tree19" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -528, -680 )
-texture = ExtResource( 11 )
-
-[node name="Tree20" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -560, -704 )
-texture = ExtResource( 11 )
-
-[node name="Tree21" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -408, -760 )
-texture = ExtResource( 11 )
-
-[node name="Tree22" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -520, -832 )
-texture = ExtResource( 11 )
-
-[node name="Tree23" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -400, -912 )
-texture = ExtResource( 11 )
-
-[node name="Tree24" type="Sprite" parent="YSort/Trees/Tree28"]
-position = Vector2( -456, -1232 )
 texture = ExtResource( 11 )
 
 [node name="Tree29" type="Sprite" parent="YSort/Trees"]
@@ -1235,4 +1239,16 @@ position = Vector2( 384, 1208 )
 texture = ExtResource( 11 )
 
 [node name="Bingus" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 72, 232 )
+position = Vector2( 72, 240 )
+
+[node name="Floppa" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 77, 432 )
+
+[node name="Laney" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 92, 635 )
+
+[node name="Harrow" parent="YSort" instance=ExtResource( 15 )]
+position = Vector2( 73, 817 )
+
+[node name="Carter" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 72, 1006 )
