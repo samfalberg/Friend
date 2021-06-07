@@ -5,7 +5,11 @@ export var interaction_parent : NodePath
 signal on_interactable_changed(newInteractable)
 
 var interaction_target : Node
-const BINGUS_DIALOGUE = preload("res://Dialogue/DialogueBox.tscn")
+const BINGUS_DIALOGUE = preload("res://Dialogue/BingusDialogue.tscn")
+const FLOPPA_DIALOGUE = preload("res://Dialogue/FloppaDialogue.tscn")
+const LANEY_DIALOGUE = preload("res://Dialogue/LaneyDialogue.tscn")
+const HARROW_DIALOGUE = preload("res://Dialogue/HarrowDialogue.tscn")
+const CARTER_DIALOGUE = preload("res://Dialogue/CarterDialogue.tscn")
 
 # Called every frame
 func _process(_delta):
@@ -13,12 +17,23 @@ func _process(_delta):
 	if (interaction_target != null and Input.is_action_just_pressed("Interact")):
 		# If so, we'll call interaction_interact() if our target supports it
 		if (interaction_target is Friend):
+			get_tree().paused = true # Prevent player from moving during dialogue
 			match interaction_target.name:
 				"Bingus":
 					var dialogue = BINGUS_DIALOGUE.instance()
 					get_parent().get_parent().get_child(2).add_child(dialogue)
 				"Floppa":
-					print("you\'re talking to floppa")
+					var dialogue = FLOPPA_DIALOGUE.instance()
+					get_parent().get_parent().get_child(2).add_child(dialogue)
+				"Laney": 
+					var dialogue = LANEY_DIALOGUE.instance()
+					get_parent().get_parent().get_child(2).add_child(dialogue)
+				"Harrow":
+					var dialogue = HARROW_DIALOGUE.instance()
+					get_parent().get_parent().get_child(2).add_child(dialogue)
+				"Carter":
+					var dialogue = CARTER_DIALOGUE.instance()
+					get_parent().get_parent().get_child(2).add_child(dialogue)
 
 # Signal triggered when our collider collides with something on the interaction layer
 func _on_InteractionComponent_body_entered(body):

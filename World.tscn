@@ -515,7 +515,7 @@ tile_data = PoolIntArray( -65536, 0, 4, -65535, 0, 196609, -65534, 0, 196609, -6
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Chasen" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 160, 80 )
+position = Vector2( 168.296, 242.018 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 
@@ -878,7 +878,7 @@ position = Vector2( -176, 976 )
 texture = ExtResource( 10 )
 
 [node name="Grass44" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -8, 1080 )
+position = Vector2( -104, 1064 )
 texture = ExtResource( 10 )
 
 [node name="Grass45" type="Sprite" parent="YSort/Grass"]
@@ -1215,7 +1215,7 @@ position = Vector2( -200, 392 )
 texture = ExtResource( 11 )
 
 [node name="Tree50" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -48, 336 )
+position = Vector2( -24, 368 )
 texture = ExtResource( 11 )
 
 [node name="Tree51" type="Sprite" parent="YSort/Trees"]

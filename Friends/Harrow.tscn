@@ -9,6 +9,7 @@ radius = 7.0
 height = 14.0
 
 [node name="Harrow" type="KinematicBody2D"]
+collision_layer = 3
 script = ExtResource( 3 )
 
 [node name="ShadowSprite" type="Sprite" parent="."]
