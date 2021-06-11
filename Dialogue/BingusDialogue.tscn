@@ -5,6 +5,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 6
+use_mipmaps = true
 extra_spacing_bottom = 4
 font_data = ExtResource( 2 )
 

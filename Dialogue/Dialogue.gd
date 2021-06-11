@@ -1,6 +1,9 @@
 extends RichTextLabel
 class_name Dialogue
 
+#const BINGUS_CHOICE1 = preload("res://Dialogue/ChoiceBox.tscn")
+var next
+
 var dialogue
 var page = 0
 
@@ -17,6 +20,8 @@ func _input(_event):
 				set_visible_characters(0)
 			else: # Remove dialogue box and allow player to move again
 				get_parent().queue_free()
+				var scene = load(next).instance()
+				get_parent().get_parent().add_child(scene)
 				get_tree().paused = false
 		else:
 			set_visible_characters(get_total_character_count())
@@ -24,5 +29,8 @@ func _input(_event):
 func _on_Timer_timeout():
 	set_visible_characters(get_visible_characters() + 1)
 	
-func _set_dialogue(script: Array):
+func _set_dialogue(script):
 	dialogue = script.duplicate()
+	
+func next_dialogue(next_dialogue):
+	next = next_dialogue
