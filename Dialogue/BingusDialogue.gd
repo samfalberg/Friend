@@ -5,20 +5,23 @@ var bingusDialogue = ["Bingus: Hello. I am Bingus, singer of songs. What brings 
 	"Bingus: I love birthday parties. They bring me great joy.",
 	"Bingus: However, I can’t be friends with just anybody.", 
 	"Bingus: Music is very close to my heart, so I will only be friends with the musically talented."]
+	
+var bingusDialogue2 = ["Bingus: Very impressive. I can’t go off of anecdotal evidence alone, though.",
+	"Bingus: How about this: If you’re able to sing my famous Bingus Jingle, then I will be your friend.",
+	"Bingus: What do you say?"]
+	
+var bingusDialogue3 = ["Bingus: First let me demonstrate the Bingus Jingle."]
 
-#"Bingus: Very impressive. I can’t go off of anecdotal evidence alone, though.",
-#	"Bingus: How about this: If you’re able to sing my famous Bingus Jingle, then I will be your friend.", 
-#	"Bingus: What do you say?",
-#	"Chasen: Ok.",
-#	"Bingus: First let me demonstrate the Bingus Jingle.",
-#	"*Bingus sings the jingle*",
-#	"Bingus: Now it's your turn!", 
-#	"Bingus: Splendid job! The hearts of Bingii all across the world are filled with the bliss of song.",
-#	"Bingus: I would be honored to call you a friend. See you at the party!"
+var bingusDialogue4 = ["Bingus: Now it's your turn!"]
+
+var bingusDialogue5 = ["Bingus: Splendid job! The hearts of Bingii all across the world are filled with the bliss of song.",
+	"Bingus: I would be honored to call you a friend. See you at the party!"]
+	
+var bingusInteraction = [bingusDialogue, bingusDialogue2, bingusDialogue3, bingusDialogue4, bingusDialogue5]
 	
 func _ready():
-	_set_dialogue(bingusDialogue)
-	next_dialogue("res://Dialogue/ChoiceBox.tscn")
-	set_bbcode(bingusDialogue[page])
+	set_dialogue(bingusInteraction)
+	set_choice("res://Dialogue/BingusChoiceBox.tscn")
+	set_bbcode(bingusInteraction[0][0])
 	set_visible_characters(0)
 	set_process_input(true)

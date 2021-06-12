@@ -11,7 +11,9 @@ func _on_Option2_mouse_entered():
 
 func _on_Button_pressed():
 	print("option 1 clicked")
+	return true
 
 
 func _on_Button2_pressed():
 	print("option 2 clicked")
+	return false
