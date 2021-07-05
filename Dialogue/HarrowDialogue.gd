@@ -27,9 +27,11 @@ var harrowDialogue = ["*The creature stares at you in silence*",
 	"Chasen: Cool.",
 	"Harrow: Awesome."
 	]
+
+var harrowInteraction = [harrowDialogue]
 	
 func _ready():
-	_set_dialogue(harrowDialogue)
-	set_bbcode(harrowDialogue[page])
+	set_dialogue(harrowInteraction)
+	set_bbcode(harrowInteraction[0][0])
 	set_visible_characters(0)
 	set_process_input(true)

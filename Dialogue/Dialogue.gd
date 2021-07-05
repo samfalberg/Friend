@@ -2,7 +2,6 @@ extends RichTextLabel
 class_name Dialogue
 
 var dialogue
-var choice
 var interaction = 0
 var page = 0
 	
@@ -14,9 +13,6 @@ func _input(_event):
 				set_bbcode(dialogue[interaction][page])
 				set_visible_characters(0)
 			else:
-				if choice:
-						var scene = load(choice).instance()
-						get_parent().get_parent().add_child(scene)
 				if interaction < dialogue.size() - 1:
 					page = 0
 					interaction += 1
@@ -33,6 +29,3 @@ func _on_Timer_timeout():
 	
 func set_dialogue(script):
 	dialogue = script.duplicate()
-	
-func set_choice(given_choice):
-	choice = given_choice

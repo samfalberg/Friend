@@ -10,8 +10,10 @@ var laneyDialogue = ["Laney: Hello. I am Laney, knower of knowledge. I am a dog.
 	"Chasen: Ok."
 	]
 	
+var laneyInteraction = [laneyDialogue]
+	
 func _ready():
-	_set_dialogue(laneyDialogue)
-	set_bbcode(laneyDialogue[page])
+	set_dialogue(laneyInteraction)
+	set_bbcode(laneyInteraction[0][0])
 	set_visible_characters(0)
 	set_process_input(true)

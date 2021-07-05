@@ -12,9 +12,11 @@ var floppaDialogue = ["Floppa: Hello. I am Floppa, keeper of the peace. Under wh
 	"Floppa: Prepare for battle!"
 	]
 
+var floppaInteraction = [floppaDialogue]
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	_set_dialogue(floppaDialogue)
-	set_bbcode(floppaDialogue[page])
+	set_dialogue(floppaInteraction)
+	set_bbcode(floppaInteraction[0][0])
 	set_visible_characters(0)
 	set_process_input(true)

@@ -6,8 +6,10 @@ var carterDialogue = ["Carter: Hello. I am Carter, befriender of rats.",
 	"Carter: Can you help me befriend these rats first?"
 	]
 	
+var carterInteraction = [carterDialogue]
+	
 func _ready():
-	_set_dialogue(carterDialogue)
-	set_bbcode(carterDialogue[page])
+	set_dialogue(carterInteraction)
+	set_bbcode(carterInteraction[0][0])
 	set_visible_characters(0)
 	set_process_input(true)
