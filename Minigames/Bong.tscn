@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Minigames/Bong.gd" type="Script" id=1]
+[ext_resource path="res://World/bg.png" type="Texture" id=2]
+[ext_resource path="res://World/fill.png" type="Texture" id=3]
+[ext_resource path="res://Dialogue/prstart.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 7
+font_data = ExtResource( 4 )
+
+[node name="Bong" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -108.0
+margin_bottom = -108.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = 110.0
+margin_top = 34.0
+margin_right = 163.0
+margin_bottom = 430.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 3 )
+fill_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 34.0
+margin_top = 19.0
+margin_right = 202.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "You are now high as fuck"
+__meta__ = {
+"_edit_use_anchors_": false
+}

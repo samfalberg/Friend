@@ -16,6 +16,27 @@ scale = Vector2( 2.11111, 2.96875 )
 color = Color( 0, 0, 0, 1 )
 polygon = PoolVector2Array( 16, 128, 16, 160, 304, 160, 304, 128 )
 
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 129.0
+margin_top = 71.0
+margin_right = 189.0
+margin_bottom = 111.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_right = 60.0
+margin_bottom = 20.0
+text = "Okay"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 60.0
+margin_bottom = 44.0
+text = "No thank you"
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 24.0
 margin_top = 133.0
@@ -33,4 +54,6 @@ __meta__ = {
 wait_time = 0.05
 autostart = true
 
+[connection signal="pressed" from="VBoxContainer/Button" to="RichTextLabel" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="RichTextLabel" method="_on_Button2_pressed"]
 [connection signal="timeout" from="Timer" to="RichTextLabel" method="_on_Timer_timeout"]

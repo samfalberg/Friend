@@ -6,7 +6,6 @@ signal on_interactable_changed(newInteractable)
 
 var interaction_target : Node
 const BINGUS_DIALOGUE = preload("res://Dialogue/BingusDialogue.tscn")
-const BINGUS_CHOICE1 = preload("res://Dialogue/ChoiceBox.tscn")
 const FLOPPA_DIALOGUE = preload("res://Dialogue/FloppaDialogue.tscn")
 const LANEY_DIALOGUE = preload("res://Dialogue/LaneyDialogue.tscn")
 const HARROW_DIALOGUE = preload("res://Dialogue/HarrowDialogue.tscn")
@@ -23,9 +22,6 @@ func _process(_delta):
 				"Bingus":
 					var dialogue = BINGUS_DIALOGUE.instance()
 					get_parent().get_parent().get_child(2).add_child(dialogue)
-					if (dialogue.is_queued_for_deletion()):
-						var choice = BINGUS_CHOICE1.instance()
-						get_parent().get_parent().get_child(2).add_child(choice)
 				"Floppa":
 					var dialogue = FLOPPA_DIALOGUE.instance()
 					get_parent().get_parent().get_child(2).add_child(dialogue)
