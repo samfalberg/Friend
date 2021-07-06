@@ -26,9 +26,9 @@ var harrowDialogue = ["*The creature stares at you in silence*",
 	
 var harrowDialogue2 = ["Harrow: You took an epic hit of Harrow’s sweet schticky gush. Good job! I will see you later at the party. I will have the local Brazilian steakhouse cater some tasty meats."]
 
-var harrowDialogue3 = ["Harrow: wtfwtfwtf"]
+var harrowDenial = ["Harrow: wtfwtfwtf"]
 
-var harrowInteraction = [harrowDialogue, harrowDialogue2, harrowDialogue3]
+var harrowInteraction = [harrowDenial, harrowDialogue, harrowDialogue2]
 
 var postDialogue = ["*Harrow stares at you in friendly silence*"]
 
@@ -36,34 +36,31 @@ var postInteraction = [postDialogue]
 	
 func _ready():
 	if Global.harrowDialogueOver:
-		set_dialogue(postInteraction)
+		set_dialogue(postInteraction, "Harrow")
 		set_bbcode(postInteraction[0][0])
 	else:	
 		if Global.harrowStartOnQuestion:
 			get_parent().get_child(0).visible = true
 		interaction = Global.harrowInteractionState
 		page = Global.harrowPageState
-		set_dialogue(harrowInteraction)
+		set_dialogue(harrowInteraction, "Harrow")
 		set_bbcode(harrowInteraction[interaction][page])
 	set_visible_characters(0)
 	set_process_input(true)
 
 func _on_Button_pressed():
 	get_parent().get_child(0).visible = false
-	if interaction == 1:
-		Global.harrowDialogueOver = true
-		endConversation = true
-		return
 	interaction += 1
 	page = 0
 	set_bbcode(harrowInteraction[interaction][page])
 	set_visible_characters(0)
 
 func _on_Button2_pressed():
-	set_bbcode(harrowInteraction[2][0])
+	set_bbcode(harrowInteraction[0][0])
 	set_visible_characters(0)
-	Global.harrowInteractionState = 0
+	Global.harrowInteractionState = 1
 	Global.harrowPageState = 21
 	Global.harrowStartOnQuestion = true
 	endConversation = true
+	startOnQuestion = true
 	get_parent().get_child(0).visible = false

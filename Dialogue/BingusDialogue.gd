@@ -19,9 +19,9 @@ var bingusDialogue3 = ["Bingus: Now it's your turn!"]
 var bingusDialogue4 = ["Bingus: Splendid job! The hearts of Bingii all across the world are filled with the bliss of song.",
 	"Bingus: I would be honored to call you a friend. See you at the party!"]
 	
-var bingusDialogue5 = ["Bingus: You just ruined my day."]
+var bingusDenial = ["Bingus: You just ruined my day."]
 	
-var bingusInteraction = [bingusDialogue, bingusDialogue2, bingusDialogue3, bingusDialogue4, bingusDialogue5]
+var bingusInteraction = [bingusDenial, bingusDialogue, bingusDialogue2, bingusDialogue3, bingusDialogue4]
 
 var postDialogue = ["Bingus: [rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]Can I have a peppermint?[/wave][/rainbow] You can have a peppermint. [rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]That's too hot for me. . .[/wave][/rainbow]"]
 
@@ -29,34 +29,31 @@ var postInteraction = [postDialogue]
 	
 func _ready():
 	if Global.bingusDialogueOver:
-		set_dialogue(postInteraction)
+		set_dialogue(postInteraction, "Bingus")
 		set_bbcode(postInteraction[0][0])
 	else:
 		if Global.bingusStartOnQuestion:
 			get_parent().get_child(0).visible = true
 		interaction = Global.bingusInteractionState
 		page = Global.bingusPageState
-		set_dialogue(bingusInteraction)
+		set_dialogue(bingusInteraction, "Bingus")
 		set_bbcode(bingusInteraction[interaction][page])
 	set_visible_characters(0)
 	set_process_input(true)
 
 func _on_Button_pressed():
 	get_parent().get_child(0).visible = false
-	if interaction == 3:
-		Global.bingusDialogueOver = true
-		endConversation = true
-		return
 	interaction += 1
 	page = 0
 	set_bbcode(bingusInteraction[interaction][page])
 	set_visible_characters(0)
 
 func _on_Button2_pressed():
-	set_bbcode(bingusInteraction[4][0])
+	set_bbcode(bingusInteraction[0][0])
 	set_visible_characters(0)
-	Global.bingusInteractionState = 0
+	Global.bingusInteractionState = 1
 	Global.bingusPageState = 8
 	Global.bingusStartOnQuestion = true
 	endConversation = true
+	startOnQuestion = true
 	get_parent().get_child(0).visible = false
