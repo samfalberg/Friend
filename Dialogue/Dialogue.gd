@@ -36,7 +36,6 @@ func show_text():
 			else:
 				if interaction < dialogue.size() - 1:
 					if interaction == 1:
-						print("making buttons visible!")
 						get_parent().get_child(0).visible = true
 					else:
 						page = 0
@@ -59,5 +58,7 @@ func end_conversation():
 				Global.laneyDialogueOver = true
 			"Harrow":
 				Global.harrowDialogueOver = true
+	# Free the minigame and dialogue box
+	get_parent().get_parent().get_child(get_parent().get_parent().get_child_count() - 1).queue_free()
 	get_parent().queue_free()
 	get_tree().paused = false

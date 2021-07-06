@@ -3,8 +3,7 @@ extends Dialogue
 var floppaDialogue = ["Floppa: Hello. I am Floppa, keeper of the peace. Under what circumstances do you stand before me?", 
 	"Chasen: Hello Floppa. I’m Chasen. You look like you could be a powerful friend. I need powerful friends so I can have a good birthday party. Would you like to come?",
 	"Floppa: I am undoubtedly powerful, but I cannot be friends with any mere mortal. You must prove yourself in the field of battle.",
-	"Chasen: I could never hope to best the almighty Big Floppa in a fight.",
-	"Chasen: Please oh please, won’t you just be friends with a scrawny weakling such as myself?",
+	"Chasen: I could never hope to best the almighty Big Floppa in a fight. Please oh please, won’t you just be friends with a scrawny weakling such as myself?",
 	"Floppa: Even the weak can’t remain strangers to bloodshed forever. Prepare for battle!",
 	"Fight Floppa?"
 	]
@@ -46,7 +45,7 @@ func _on_Button2_pressed():
 	set_bbcode(floppaInteraction[0][0])
 	set_visible_characters(0)
 	Global.floppaInteractionState = 1
-	Global.floppaPageState = 6
+	Global.floppaPageState = 5
 	Global.floppaStartOnQuestion = true
 	endConversation = true
 	startOnQuestion = true

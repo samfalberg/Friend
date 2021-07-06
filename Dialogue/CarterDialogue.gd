@@ -9,7 +9,7 @@ var carterDialogue = ["Carter: Hello. I am Carter, befriender of rats.",
 var carterDialogue2 = ["Carter: Wonderful! Let’s give all of these blessed rats their very first friend. :)",
 	"*Carter gives instructions."]
 	
-var carterDialogue3 = ["Carter: Chasen! We befriended a lot of rats today. Let’s go to your birthday party. All of the rats will be there! <3"]
+var carterDialogue3 = ["Carter: Chasen! We befriended a lot of rats today. Let’s go to your birthday party. All of your new friends will be there! <3"]
 	
 var carterDenial = ["Carter: But I can’t do it all alone . . ."]
 	

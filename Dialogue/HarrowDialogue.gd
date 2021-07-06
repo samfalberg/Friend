@@ -1,5 +1,8 @@
 extends Dialogue
 
+var MINIGAME = preload("res://Minigames/Bong.tscn")
+var game
+
 var harrowDialogue = ["*The creature stares at you in silence*",
 	"Chasen: Hi.",
 	"???: Hello.",
@@ -35,6 +38,11 @@ var postDialogue = ["*Harrow stares at you in friendly silence*"]
 var postInteraction = [postDialogue]
 	
 func _ready():
+	game = MINIGAME.instance()
+	get_parent().get_parent().add_child(game)
+	game.visible = false
+	game.pause_mode = Node.PAUSE_MODE_STOP
+	
 	if Global.harrowDialogueOver:
 		set_dialogue(postInteraction, "Harrow")
 		set_bbcode(postInteraction[0][0])
@@ -50,6 +58,14 @@ func _ready():
 
 func _on_Button_pressed():
 	get_parent().get_child(0).visible = false
+	game.visible = true
+	game.pause_mode = Node.PAUSE_MODE_PROCESS
+	get_parent().pause_mode = Node.PAUSE_MODE_STOP
+	get_parent().visible = false
+	yield(game, "bong_ripped")
+	get_parent().pause_mode = Node.PAUSE_MODE_PROCESS
+	get_parent().visible = true
+	print("ladies and gentlemen, bong has been ripped")
 	interaction += 1
 	page = 0
 	set_bbcode(harrowInteraction[interaction][page])
