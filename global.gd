@@ -3,7 +3,7 @@ extends Node2D
 var bingusInteractionState = 0
 var bingusPageState = 0
 var bingusStartOnQuestion = false
-var bingusDialogueOver = false
+var bingusDialogueOver = true
 
 var floppaInteractionState = 0
 var floppaPageState = 0

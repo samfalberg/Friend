@@ -23,7 +23,7 @@ var bingusDialogue5 = ["Bingus: You just ruined my day."]
 	
 var bingusInteraction = [bingusDialogue, bingusDialogue2, bingusDialogue3, bingusDialogue4, bingusDialogue5]
 
-var postDialogue = ["Bingus: Can I have a peppermint? You can have a peppermint. That's too hot for me. . . "]
+var postDialogue = ["Bingus: [rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]Can I have a peppermint?[/wave][/rainbow] You can have a peppermint. [rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]That's too hot for me. . .[/wave][/rainbow]"]
 
 var postInteraction = [postDialogue]
 	

@@ -16,7 +16,7 @@ var floppaDialogue3 = ["Floppa: Coward . . ."]
 
 var floppaInteraction = [floppaDialogue, floppaDialogue2, floppaDialogue3]
 
-var postDialogue = ["Floppa: I know karate and jiu jitsu and krav maga and taekwondo and . . ."]
+var postDialogue = ["Floppa: I know karate and jiu jitsu and krav maga and taekwondo and kung fu and. . ."]
 
 var postInteraction = [postDialogue]
 
