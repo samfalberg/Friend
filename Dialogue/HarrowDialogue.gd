@@ -65,7 +65,7 @@ func _on_Button_pressed():
 	yield(game, "bong_ripped")
 	get_parent().pause_mode = Node.PAUSE_MODE_PROCESS
 	get_parent().visible = true
-	print("ladies and gentlemen, bong has been ripped")
+	
 	interaction += 1
 	page = 0
 	set_bbcode(harrowInteraction[interaction][page])

@@ -3,15 +3,15 @@
 [ext_resource path="res://Dialogue/BingusDialogue.gd" type="Script" id=1]
 [ext_resource path="res://Dialogue/prstart.ttf" type="DynamicFontData" id=2]
 
+[sub_resource type="DynamicFont" id=4]
+size = 4
+font_data = ExtResource( 2 )
+
 [sub_resource type="DynamicFont" id=2]
 size = 4
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 4
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=1]
 size = 4
 use_mipmaps = true
 extra_spacing_bottom = 4
@@ -19,7 +19,7 @@ font_data = ExtResource( 2 )
 
 [node name="DialogueBox" type="Polygon2D"]
 pause_mode = 2
-position = Vector2( -336, -307 )
+position = Vector2( -337.778, -307 )
 scale = Vector2( 2.11111, 2.96875 )
 color = Color( 0, 0, 0, 1 )
 polygon = PoolVector2Array( 16, 128, 16, 160, 304, 160, 304, 128 )
@@ -37,14 +37,14 @@ __meta__ = {
 [node name="Button" type="Button" parent="VBoxContainer"]
 margin_right = 60.0
 margin_bottom = 11.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 text = "Okay"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 margin_top = 15.0
 margin_right = 60.0
 margin_bottom = 26.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "No thank you"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -52,7 +52,7 @@ margin_left = 24.0
 margin_top = 133.0
 margin_right = 296.0
 margin_bottom = 155.0
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
 scroll_active = false
 script = ExtResource( 1 )

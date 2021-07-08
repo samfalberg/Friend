@@ -10,7 +10,6 @@ var friendName
 
 func _input(_event):
 	if Input.is_mouse_button_pressed(1) && not get_parent().get_child(0).visible:
-		print("Interaction: " + str(interaction) + ", page: " + str(page))
 		show_text()
 
 func _on_Timer_timeout():

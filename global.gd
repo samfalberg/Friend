@@ -14,6 +14,7 @@ var laneyInteractionState = 1
 var laneyPageState = 0
 var laneyStartOnQuestion = false
 var laneyDialogueOver = false
+signal quiz_complete
 
 var harrowInteractionState = 1
 var harrowPageState = 0
