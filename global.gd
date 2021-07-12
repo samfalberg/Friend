@@ -9,6 +9,10 @@ var floppaInteractionState = 1
 var floppaPageState = 0
 var floppaStartOnQuestion = false
 var floppaDialogueOver = false
+signal fight_start
+signal fight_complete
+signal show_health
+signal hide_health
 
 var laneyInteractionState = 1
 var laneyPageState = 0

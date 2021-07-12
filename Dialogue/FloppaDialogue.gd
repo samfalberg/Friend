@@ -36,6 +36,17 @@ func _ready():
 
 func _on_Button_pressed():
 	get_parent().get_child(0).visible = false
+	Global.emit_signal("fight_start")
+	Global.emit_signal("show_health")
+	get_tree().paused = false
+	get_parent().pause_mode = Node.PAUSE_MODE_STOP
+	get_parent().visible = false
+	yield(Global, "fight_complete")
+	Global.emit_signal("hide_health")
+	get_parent().pause_mode = Node.PAUSE_MODE_PROCESS
+	get_parent().visible = true
+	get_tree().paused = true
+
 	interaction += 1
 	page = 0
 	set_bbcode(floppaInteraction[interaction][page])

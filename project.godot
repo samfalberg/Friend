@@ -39,6 +39,12 @@ config/icon="res://icon.png"
 [autoload]
 
 Global="*res://global.gd"
+PlayerStats="*res://Player/PlayerStats.tscn"
+
+[debug]
+
+gdscript/warnings/unused_signal=false
+gdscript/warnings/return_value_discarded=false
 
 [display]
 
@@ -110,8 +116,10 @@ Interact={
 
 [layer_names]
 
-2d_physics/layer_1="default"
-2d_physics/layer_2="interactable"
+2d_physics/layer_1="World"
+2d_physics/layer_2="Interactable"
+2d_physics/layer_3="Player"
+2d_physics/layer_4="PlayerHurtbox"
 
 [physics]
 

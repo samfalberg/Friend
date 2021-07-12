@@ -26,3 +26,17 @@ flip_h = true
 position = Vector2( -3, -2 )
 rotation = -1.5708
 shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.5
+
+[node name="FireballPos1" type="Position2D" parent="."]
+position = Vector2( -32, -8 )
+
+[node name="FireballPos2" type="Position2D" parent="."]
+position = Vector2( -32, -56 )
+
+[node name="FireballPos3" type="Position2D" parent="."]
+position = Vector2( -32, 40 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

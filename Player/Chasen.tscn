@@ -1,15 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Chasen.png" type="Texture" id=1]
 [ext_resource path="res://Player/Chasen.gd" type="Script" id=2]
 [ext_resource path="res://Player/InteractionComponent.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player/PlayerStats.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player/Hurtbox.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.99999
 height = 10.0
 
+[sub_resource type="CapsuleShape2D" id=2]
+
 [node name="Chasen" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
+collision_layer = 4
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -29,3 +35,23 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="HealthUI" parent="Camera2D" instance=ExtResource( 6 )]
+visible = false
+margin_left = -22.0
+margin_top = -50.0
+margin_right = 18.0
+margin_bottom = -10.0
+
+[node name="PlayerStats" parent="." instance=ExtResource( 4 )]
+
+[node name="Hurtbox" parent="." instance=ExtResource( 5 )]
+collision_layer = 8
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( 0, -14 )
+shape = SubResource( 2 )
+
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+
+[editable path="Hurtbox"]

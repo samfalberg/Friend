@@ -1,12 +1,9 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Player/Chasen.tscn" type="PackedScene" id=1]
-[ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=3]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
-[ext_resource path="res://World/Grass.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Tree.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Friends/Bingus.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/Bush.png" type="Texture" id=9]
 [ext_resource path="res://World/Grass.png" type="Texture" id=10]
@@ -518,728 +515,7 @@ tile_data = PoolIntArray( -65536, 0, 4, -65535, 0, 196609, -65534, 0, 196609, -6
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Chasen" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 159, 622 )
-
-[node name="Bushes" type="YSort" parent="YSort"]
-
-[node name="Bush" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 64, 64 )
-
-[node name="Bush2" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 216, 40 )
-
-[node name="Bush3" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -56, 1016 )
-texture = ExtResource( 9 )
-
-[node name="Bush4" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -176, 1176 )
-texture = ExtResource( 9 )
-
-[node name="Bush5" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -168, 1032 )
-texture = ExtResource( 9 )
-
-[node name="Bush6" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -16, 1200 )
-texture = ExtResource( 9 )
-
-[node name="Bush7" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 448, 1072 )
-texture = ExtResource( 9 )
-
-[node name="Bush8" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 392, 968 )
-texture = ExtResource( 9 )
-
-[node name="Bush9" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 424, 856 )
-texture = ExtResource( 9 )
-
-[node name="Bush10" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 376, 864 )
-texture = ExtResource( 9 )
-
-[node name="Bush11" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 456, 728 )
-texture = ExtResource( 9 )
-
-[node name="Bush12" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 392, 600 )
-texture = ExtResource( 9 )
-
-[node name="Bush13" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 368, 672 )
-texture = ExtResource( 9 )
-
-[node name="Bush14" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 368, 520 )
-texture = ExtResource( 9 )
-
-[node name="Bush15" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 472, 432 )
-texture = ExtResource( 9 )
-
-[node name="Bush16" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 440, 488 )
-texture = ExtResource( 9 )
-
-[node name="Bush17" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 376, 312 )
-texture = ExtResource( 9 )
-
-[node name="Bush18" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -160, 808 )
-texture = ExtResource( 9 )
-
-[node name="Bush19" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -56, 592 )
-texture = ExtResource( 9 )
-
-[node name="Bush20" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -80, 752 )
-texture = ExtResource( 9 )
-
-[node name="Bush21" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -152, 672 )
-texture = ExtResource( 9 )
-
-[node name="Bush22" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -64, 408 )
-texture = ExtResource( 9 )
-
-[node name="Bush23" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -160, 384 )
-texture = ExtResource( 9 )
-
-[node name="Bush24" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -96, 272 )
-texture = ExtResource( 9 )
-
-[node name="Bush25" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -136, 200 )
-texture = ExtResource( 9 )
-
-[node name="Bush26" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -40, 104 )
-texture = ExtResource( 9 )
-
-[node name="Bush27" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -136, 16 )
-texture = ExtResource( 9 )
-
-[node name="Bush28" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -144, 80 )
-texture = ExtResource( 9 )
-
-[node name="Bush29" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 120, -88 )
-texture = ExtResource( 9 )
-
-[node name="Bush30" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( -56, -72 )
-texture = ExtResource( 9 )
-
-[node name="Bush31" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 320, -64 )
-texture = ExtResource( 9 )
-
-[node name="Bush32" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 200, -152 )
-texture = ExtResource( 9 )
-
-[node name="Bush33" type="Sprite" parent="YSort/Bushes"]
-position = Vector2( 464, 104 )
-texture = ExtResource( 9 )
-
-[node name="Grass" type="YSort" parent="YSort"]
-
-[node name="Grass" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 104, 160 )
-
-[node name="Grass2" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 112, 24 )
-
-[node name="Grass3" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 224, 1208 )
-texture = ExtResource( 10 )
-
-[node name="Grass4" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 416, 0 )
-texture = ExtResource( 10 )
-
-[node name="Grass5" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 400, 120 )
-texture = ExtResource( 10 )
-
-[node name="Grass6" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 368, 152 )
-texture = ExtResource( 10 )
-
-[node name="Grass7" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 400, 136 )
-texture = ExtResource( 10 )
-
-[node name="Grass8" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 384, 136 )
-texture = ExtResource( 10 )
-
-[node name="Grass9" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 424, 24 )
-texture = ExtResource( 10 )
-
-[node name="Grass10" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 408, 16 )
-texture = ExtResource( 10 )
-
-[node name="Grass61" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -88, 64 )
-texture = ExtResource( 10 )
-
-[node name="Grass62" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -80, 72 )
-texture = ExtResource( 10 )
-
-[node name="Grass63" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -96, 72 )
-texture = ExtResource( 10 )
-
-[node name="Grass64" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -176, 168 )
-texture = ExtResource( 10 )
-
-[node name="Grass65" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -88, 216 )
-texture = ExtResource( 10 )
-
-[node name="Grass66" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -72, 216 )
-texture = ExtResource( 10 )
-
-[node name="Grass67" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -136, 320 )
-texture = ExtResource( 10 )
-
-[node name="Grass68" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -128, 320 )
-texture = ExtResource( 10 )
-
-[node name="Grass69" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -128, 336 )
-texture = ExtResource( 10 )
-
-[node name="Grass70" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -112, 312 )
-texture = ExtResource( 10 )
-
-[node name="Grass71" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -112, 328 )
-texture = ExtResource( 10 )
-
-[node name="Grass72" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -16, 448 )
-texture = ExtResource( 10 )
-
-[node name="Grass73" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -192, 464 )
-texture = ExtResource( 10 )
-
-[node name="Grass74" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -176, 464 )
-texture = ExtResource( 10 )
-
-[node name="Grass75" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -184, 472 )
-texture = ExtResource( 10 )
-
-[node name="Grass11" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -32, -136 )
-texture = ExtResource( 10 )
-
-[node name="Grass12" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -16, -120 )
-texture = ExtResource( 10 )
-
-[node name="Grass13" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -40, -120 )
-texture = ExtResource( 10 )
-
-[node name="Grass14" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -32, -104 )
-texture = ExtResource( 10 )
-
-[node name="Grass15" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 88, -136 )
-texture = ExtResource( 10 )
-
-[node name="Grass16" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 72, -136 )
-texture = ExtResource( 10 )
-
-[node name="Grass17" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 88, -120 )
-texture = ExtResource( 10 )
-
-[node name="Grass18" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 72, -120 )
-texture = ExtResource( 10 )
-
-[node name="Grass19" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 72, -104 )
-texture = ExtResource( 10 )
-
-[node name="Grass20" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 376, -120 )
-texture = ExtResource( 10 )
-
-[node name="Grass21" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 400, -128 )
-texture = ExtResource( 10 )
-
-[node name="Grass22" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 384, -136 )
-texture = ExtResource( 10 )
-
-[node name="Grass23" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -112, 528 )
-texture = ExtResource( 10 )
-
-[node name="Grass24" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -112, 544 )
-texture = ExtResource( 10 )
-
-[node name="Grass25" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -168, 624 )
-texture = ExtResource( 10 )
-
-[node name="Grass26" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -160, 632 )
-texture = ExtResource( 10 )
-
-[node name="Grass27" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -152, 624 )
-texture = ExtResource( 10 )
-
-[node name="Grass28" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -96, 640 )
-texture = ExtResource( 10 )
-
-[node name="Grass29" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -80, 632 )
-texture = ExtResource( 10 )
-
-[node name="Grass30" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -96, 624 )
-texture = ExtResource( 10 )
-
-[node name="Grass31" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -96, 768 )
-texture = ExtResource( 10 )
-
-[node name="Grass33" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -64, 768 )
-texture = ExtResource( 10 )
-
-[node name="Grass34" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -104, 760 )
-texture = ExtResource( 10 )
-
-[node name="Grass35" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -112, 856 )
-texture = ExtResource( 10 )
-
-[node name="Grass36" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -128, 856 )
-texture = ExtResource( 10 )
-
-[node name="Grass37" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -144, 888 )
-texture = ExtResource( 10 )
-
-[node name="Grass38" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -128, 888 )
-texture = ExtResource( 10 )
-
-[node name="Grass39" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -64, 944 )
-texture = ExtResource( 10 )
-
-[node name="Grass40" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -48, 944 )
-texture = ExtResource( 10 )
-
-[node name="Grass41" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -56, 928 )
-texture = ExtResource( 10 )
-
-[node name="Grass42" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -72, 928 )
-texture = ExtResource( 10 )
-
-[node name="Grass43" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -176, 976 )
-texture = ExtResource( 10 )
-
-[node name="Grass44" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -104, 1064 )
-texture = ExtResource( 10 )
-
-[node name="Grass45" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -160, 1096 )
-texture = ExtResource( 10 )
-
-[node name="Grass46" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -144, 1096 )
-texture = ExtResource( 10 )
-
-[node name="Grass47" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -128, 1096 )
-texture = ExtResource( 10 )
-
-[node name="Grass48" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -160, 1112 )
-texture = ExtResource( 10 )
-
-[node name="Grass49" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -128, 1216 )
-texture = ExtResource( 10 )
-
-[node name="Grass50" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 56, 1192 )
-texture = ExtResource( 10 )
-
-[node name="Grass51" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 344, 1184 )
-texture = ExtResource( 10 )
-
-[node name="Grass52" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 448, 1128 )
-texture = ExtResource( 10 )
-
-[node name="Grass53" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 464, 1128 )
-texture = ExtResource( 10 )
-
-[node name="Grass54" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 448, 1144 )
-texture = ExtResource( 10 )
-
-[node name="Grass55" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 432, 1144 )
-texture = ExtResource( 10 )
-
-[node name="Grass56" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 376, 1040 )
-texture = ExtResource( 10 )
-
-[node name="Grass57" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 392, 1040 )
-texture = ExtResource( 10 )
-
-[node name="Grass58" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 392, 1024 )
-texture = ExtResource( 10 )
-
-[node name="Grass59" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 416, 976 )
-texture = ExtResource( 10 )
-
-[node name="Grass60" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 368, 976 )
-texture = ExtResource( 10 )
-
-[node name="Grass32" type="Sprite" parent="YSort/Grass"]
-position = Vector2( -80, 768 )
-texture = ExtResource( 10 )
-
-[node name="Grass76" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 400, 984 )
-texture = ExtResource( 10 )
-
-[node name="Grass77" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 400, 872 )
-texture = ExtResource( 10 )
-
-[node name="Grass78" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 480, 848 )
-texture = ExtResource( 10 )
-
-[node name="Grass79" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 336, 768 )
-texture = ExtResource( 10 )
-
-[node name="Grass80" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 336, 784 )
-texture = ExtResource( 10 )
-
-[node name="Grass81" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 352, 720 )
-texture = ExtResource( 10 )
-
-[node name="Grass82" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 368, 720 )
-texture = ExtResource( 10 )
-
-[node name="Grass83" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 376, 616 )
-texture = ExtResource( 10 )
-
-[node name="Grass84" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 384, 616 )
-texture = ExtResource( 10 )
-
-[node name="Grass85" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 368, 600 )
-texture = ExtResource( 10 )
-
-[node name="Grass86" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 456, 552 )
-texture = ExtResource( 10 )
-
-[node name="Grass87" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 368, 448 )
-texture = ExtResource( 10 )
-
-[node name="Grass88" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 352, 448 )
-texture = ExtResource( 10 )
-
-[node name="Grass89" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 384, 448 )
-texture = ExtResource( 10 )
-
-[node name="Grass90" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 368, 464 )
-texture = ExtResource( 10 )
-
-[node name="Grass91" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 384, 464 )
-texture = ExtResource( 10 )
-
-[node name="Grass92" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 448, 328 )
-texture = ExtResource( 10 )
-
-[node name="Grass93" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 464, 328 )
-texture = ExtResource( 10 )
-
-[node name="Grass94" type="Sprite" parent="YSort/Grass"]
-position = Vector2( 448, 344 )
-texture = ExtResource( 10 )
-
-[node name="Trees" type="YSort" parent="YSort"]
-
-[node name="Tree" parent="YSort/Trees" instance=ExtResource( 7 )]
-position = Vector2( 152, 24 )
-
-[node name="Tree2" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -40, 24 )
-texture = ExtResource( 11 )
-
-[node name="Tree3" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -80, 0 )
-texture = ExtResource( 11 )
-
-[node name="Tree4" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -152, 120 )
-texture = ExtResource( 11 )
-
-[node name="Tree5" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -104, -64 )
-texture = ExtResource( 11 )
-
-[node name="Tree6" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 40, -80 )
-texture = ExtResource( 11 )
-
-[node name="Tree7" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 48, -168 )
-texture = ExtResource( 11 )
-
-[node name="Tree8" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 208, -96 )
-texture = ExtResource( 11 )
-
-[node name="Tree9" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 152, -120 )
-texture = ExtResource( 11 )
-
-[node name="Tree10" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 280, -128 )
-texture = ExtResource( 11 )
-
-[node name="Tree11" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 440, -72 )
-texture = ExtResource( 11 )
-
-[node name="Tree12" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 384, -8 )
-texture = ExtResource( 11 )
-
-[node name="Tree13" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 408, 56 )
-texture = ExtResource( 11 )
-
-[node name="Tree14" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 472, 168 )
-texture = ExtResource( 11 )
-
-[node name="Tree15" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 440, 168 )
-texture = ExtResource( 11 )
-
-[node name="Tree16" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 360, 208 )
-texture = ExtResource( 11 )
-
-[node name="Tree17" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 448, 248 )
-texture = ExtResource( 11 )
-
-[node name="Tree18" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 384, 360 )
-texture = ExtResource( 11 )
-
-[node name="Tree19" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 408, 392 )
-texture = ExtResource( 11 )
-
-[node name="Tree20" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 488, 504 )
-texture = ExtResource( 11 )
-
-[node name="Tree21" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 472, 632 )
-texture = ExtResource( 11 )
-
-[node name="Tree22" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 336, 624 )
-texture = ExtResource( 11 )
-
-[node name="Tree23" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 408, 760 )
-texture = ExtResource( 11 )
-
-[node name="Tree24" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 472, 920 )
-texture = ExtResource( 11 )
-
-[node name="Tree25" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 344, 904 )
-texture = ExtResource( 11 )
-
-[node name="Tree26" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 472, 1032 )
-texture = ExtResource( 11 )
-
-[node name="Tree27" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 440, 1008 )
-texture = ExtResource( 11 )
-
-[node name="Tree30" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 240, 1184 )
-texture = ExtResource( 11 )
-
-[node name="Tree31" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 128, 1216 )
-texture = ExtResource( 11 )
-
-[node name="Tree32" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 184, 1208 )
-texture = ExtResource( 11 )
-
-[node name="Tree33" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 32, 1192 )
-texture = ExtResource( 11 )
-
-[node name="Tree34" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -88, 1192 )
-texture = ExtResource( 11 )
-
-[node name="Tree35" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -120, 1136 )
-texture = ExtResource( 11 )
-
-[node name="Tree36" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -200, 1080 )
-texture = ExtResource( 11 )
-
-[node name="Tree37" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -120, 952 )
-texture = ExtResource( 11 )
-
-[node name="Tree38" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -88, 944 )
-texture = ExtResource( 11 )
-
-[node name="Tree39" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -96, 976 )
-texture = ExtResource( 11 )
-
-[node name="Tree40" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -176, 912 )
-texture = ExtResource( 11 )
-
-[node name="Tree41" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -64, 896 )
-texture = ExtResource( 11 )
-
-[node name="Tree42" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -16, 808 )
-texture = ExtResource( 11 )
-
-[node name="Tree43" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -104, 808 )
-texture = ExtResource( 11 )
-
-[node name="Tree44" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -72, 672 )
-texture = ExtResource( 11 )
-
-[node name="Tree45" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -168, 720 )
-texture = ExtResource( 11 )
-
-[node name="Tree46" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -184, 552 )
-texture = ExtResource( 11 )
-
-[node name="Tree47" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -72, 464 )
-texture = ExtResource( 11 )
-
-[node name="Tree48" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -168, 416 )
-texture = ExtResource( 11 )
-
-[node name="Tree49" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -200, 392 )
-texture = ExtResource( 11 )
-
-[node name="Tree50" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -24, 368 )
-texture = ExtResource( 11 )
-
-[node name="Tree51" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -160, 264 )
-texture = ExtResource( 11 )
-
-[node name="Tree52" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -40, 184 )
-texture = ExtResource( 11 )
-
-[node name="Tree53" type="Sprite" parent="YSort/Trees"]
-position = Vector2( -96, -136 )
-texture = ExtResource( 11 )
-
-[node name="Tree28" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 360, 1096 )
-texture = ExtResource( 11 )
-
-[node name="Tree29" type="Sprite" parent="YSort/Trees"]
-position = Vector2( 384, 1208 )
-texture = ExtResource( 11 )
+position = Vector2( 154, 422 )
 
 [node name="Bingus" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 72, 240 )
@@ -1255,3 +531,709 @@ position = Vector2( 73, 817 )
 
 [node name="Carter" parent="YSort" instance=ExtResource( 14 )]
 position = Vector2( 72, 1006 )
+
+[node name="Bushes" type="YSort" parent="."]
+
+[node name="Bush3" type="Sprite" parent="Bushes"]
+position = Vector2( -56, 1016 )
+texture = ExtResource( 9 )
+
+[node name="Bush4" type="Sprite" parent="Bushes"]
+position = Vector2( -176, 1176 )
+texture = ExtResource( 9 )
+
+[node name="Bush5" type="Sprite" parent="Bushes"]
+position = Vector2( -168, 1032 )
+texture = ExtResource( 9 )
+
+[node name="Bush6" type="Sprite" parent="Bushes"]
+position = Vector2( -16, 1200 )
+texture = ExtResource( 9 )
+
+[node name="Bush7" type="Sprite" parent="Bushes"]
+position = Vector2( 448, 1072 )
+texture = ExtResource( 9 )
+
+[node name="Bush8" type="Sprite" parent="Bushes"]
+position = Vector2( 392, 968 )
+texture = ExtResource( 9 )
+
+[node name="Bush9" type="Sprite" parent="Bushes"]
+position = Vector2( 424, 856 )
+texture = ExtResource( 9 )
+
+[node name="Bush10" type="Sprite" parent="Bushes"]
+position = Vector2( 376, 864 )
+texture = ExtResource( 9 )
+
+[node name="Bush11" type="Sprite" parent="Bushes"]
+position = Vector2( 456, 728 )
+texture = ExtResource( 9 )
+
+[node name="Bush12" type="Sprite" parent="Bushes"]
+position = Vector2( 392, 600 )
+texture = ExtResource( 9 )
+
+[node name="Bush13" type="Sprite" parent="Bushes"]
+position = Vector2( 368, 672 )
+texture = ExtResource( 9 )
+
+[node name="Bush14" type="Sprite" parent="Bushes"]
+position = Vector2( 368, 520 )
+texture = ExtResource( 9 )
+
+[node name="Bush15" type="Sprite" parent="Bushes"]
+position = Vector2( 472, 432 )
+texture = ExtResource( 9 )
+
+[node name="Bush16" type="Sprite" parent="Bushes"]
+position = Vector2( 440, 488 )
+texture = ExtResource( 9 )
+
+[node name="Bush17" type="Sprite" parent="Bushes"]
+position = Vector2( 376, 312 )
+texture = ExtResource( 9 )
+
+[node name="Bush18" type="Sprite" parent="Bushes"]
+position = Vector2( -160, 808 )
+texture = ExtResource( 9 )
+
+[node name="Bush19" type="Sprite" parent="Bushes"]
+position = Vector2( -56, 592 )
+texture = ExtResource( 9 )
+
+[node name="Bush20" type="Sprite" parent="Bushes"]
+position = Vector2( -80, 752 )
+texture = ExtResource( 9 )
+
+[node name="Bush21" type="Sprite" parent="Bushes"]
+position = Vector2( -152, 672 )
+texture = ExtResource( 9 )
+
+[node name="Bush22" type="Sprite" parent="Bushes"]
+position = Vector2( -64, 408 )
+texture = ExtResource( 9 )
+
+[node name="Bush23" type="Sprite" parent="Bushes"]
+position = Vector2( -160, 384 )
+texture = ExtResource( 9 )
+
+[node name="Bush24" type="Sprite" parent="Bushes"]
+position = Vector2( -96, 272 )
+texture = ExtResource( 9 )
+
+[node name="Bush25" type="Sprite" parent="Bushes"]
+position = Vector2( -136, 200 )
+texture = ExtResource( 9 )
+
+[node name="Bush26" type="Sprite" parent="Bushes"]
+position = Vector2( -40, 104 )
+texture = ExtResource( 9 )
+
+[node name="Bush27" type="Sprite" parent="Bushes"]
+position = Vector2( -136, 16 )
+texture = ExtResource( 9 )
+
+[node name="Bush28" type="Sprite" parent="Bushes"]
+position = Vector2( -144, 80 )
+texture = ExtResource( 9 )
+
+[node name="Bush29" type="Sprite" parent="Bushes"]
+position = Vector2( 120, -88 )
+texture = ExtResource( 9 )
+
+[node name="Bush30" type="Sprite" parent="Bushes"]
+position = Vector2( -56, -72 )
+texture = ExtResource( 9 )
+
+[node name="Bush31" type="Sprite" parent="Bushes"]
+position = Vector2( 320, -64 )
+texture = ExtResource( 9 )
+
+[node name="Bush32" type="Sprite" parent="Bushes"]
+position = Vector2( 200, -152 )
+texture = ExtResource( 9 )
+
+[node name="Bush33" type="Sprite" parent="Bushes"]
+position = Vector2( 464, 104 )
+texture = ExtResource( 9 )
+
+[node name="Grass" type="YSort" parent="."]
+
+[node name="Grass3" type="Sprite" parent="Grass"]
+position = Vector2( 224, 1208 )
+texture = ExtResource( 10 )
+
+[node name="Grass4" type="Sprite" parent="Grass"]
+position = Vector2( 416, 0 )
+texture = ExtResource( 10 )
+
+[node name="Grass5" type="Sprite" parent="Grass"]
+position = Vector2( 400, 120 )
+texture = ExtResource( 10 )
+
+[node name="Grass6" type="Sprite" parent="Grass"]
+position = Vector2( 368, 152 )
+texture = ExtResource( 10 )
+
+[node name="Grass7" type="Sprite" parent="Grass"]
+position = Vector2( 400, 136 )
+texture = ExtResource( 10 )
+
+[node name="Grass8" type="Sprite" parent="Grass"]
+position = Vector2( 384, 136 )
+texture = ExtResource( 10 )
+
+[node name="Grass9" type="Sprite" parent="Grass"]
+position = Vector2( 424, 24 )
+texture = ExtResource( 10 )
+
+[node name="Grass10" type="Sprite" parent="Grass"]
+position = Vector2( 408, 16 )
+texture = ExtResource( 10 )
+
+[node name="Grass61" type="Sprite" parent="Grass"]
+position = Vector2( -88, 64 )
+texture = ExtResource( 10 )
+
+[node name="Grass62" type="Sprite" parent="Grass"]
+position = Vector2( -80, 72 )
+texture = ExtResource( 10 )
+
+[node name="Grass63" type="Sprite" parent="Grass"]
+position = Vector2( -96, 72 )
+texture = ExtResource( 10 )
+
+[node name="Grass64" type="Sprite" parent="Grass"]
+position = Vector2( -176, 168 )
+texture = ExtResource( 10 )
+
+[node name="Grass65" type="Sprite" parent="Grass"]
+position = Vector2( -88, 216 )
+texture = ExtResource( 10 )
+
+[node name="Grass66" type="Sprite" parent="Grass"]
+position = Vector2( -72, 216 )
+texture = ExtResource( 10 )
+
+[node name="Grass67" type="Sprite" parent="Grass"]
+position = Vector2( -136, 320 )
+texture = ExtResource( 10 )
+
+[node name="Grass68" type="Sprite" parent="Grass"]
+position = Vector2( -128, 320 )
+texture = ExtResource( 10 )
+
+[node name="Grass69" type="Sprite" parent="Grass"]
+position = Vector2( -128, 336 )
+texture = ExtResource( 10 )
+
+[node name="Grass70" type="Sprite" parent="Grass"]
+position = Vector2( -112, 312 )
+texture = ExtResource( 10 )
+
+[node name="Grass71" type="Sprite" parent="Grass"]
+position = Vector2( -112, 328 )
+texture = ExtResource( 10 )
+
+[node name="Grass72" type="Sprite" parent="Grass"]
+position = Vector2( -16, 448 )
+texture = ExtResource( 10 )
+
+[node name="Grass73" type="Sprite" parent="Grass"]
+position = Vector2( -192, 464 )
+texture = ExtResource( 10 )
+
+[node name="Grass74" type="Sprite" parent="Grass"]
+position = Vector2( -176, 464 )
+texture = ExtResource( 10 )
+
+[node name="Grass75" type="Sprite" parent="Grass"]
+position = Vector2( -184, 472 )
+texture = ExtResource( 10 )
+
+[node name="Grass11" type="Sprite" parent="Grass"]
+position = Vector2( -32, -136 )
+texture = ExtResource( 10 )
+
+[node name="Grass12" type="Sprite" parent="Grass"]
+position = Vector2( -16, -120 )
+texture = ExtResource( 10 )
+
+[node name="Grass13" type="Sprite" parent="Grass"]
+position = Vector2( -40, -120 )
+texture = ExtResource( 10 )
+
+[node name="Grass14" type="Sprite" parent="Grass"]
+position = Vector2( -32, -104 )
+texture = ExtResource( 10 )
+
+[node name="Grass15" type="Sprite" parent="Grass"]
+position = Vector2( 88, -136 )
+texture = ExtResource( 10 )
+
+[node name="Grass16" type="Sprite" parent="Grass"]
+position = Vector2( 72, -136 )
+texture = ExtResource( 10 )
+
+[node name="Grass17" type="Sprite" parent="Grass"]
+position = Vector2( 88, -120 )
+texture = ExtResource( 10 )
+
+[node name="Grass18" type="Sprite" parent="Grass"]
+position = Vector2( 72, -120 )
+texture = ExtResource( 10 )
+
+[node name="Grass19" type="Sprite" parent="Grass"]
+position = Vector2( 72, -104 )
+texture = ExtResource( 10 )
+
+[node name="Grass20" type="Sprite" parent="Grass"]
+position = Vector2( 376, -120 )
+texture = ExtResource( 10 )
+
+[node name="Grass21" type="Sprite" parent="Grass"]
+position = Vector2( 400, -128 )
+texture = ExtResource( 10 )
+
+[node name="Grass22" type="Sprite" parent="Grass"]
+position = Vector2( 384, -136 )
+texture = ExtResource( 10 )
+
+[node name="Grass23" type="Sprite" parent="Grass"]
+position = Vector2( -112, 528 )
+texture = ExtResource( 10 )
+
+[node name="Grass24" type="Sprite" parent="Grass"]
+position = Vector2( -112, 544 )
+texture = ExtResource( 10 )
+
+[node name="Grass25" type="Sprite" parent="Grass"]
+position = Vector2( -168, 624 )
+texture = ExtResource( 10 )
+
+[node name="Grass26" type="Sprite" parent="Grass"]
+position = Vector2( -160, 632 )
+texture = ExtResource( 10 )
+
+[node name="Grass27" type="Sprite" parent="Grass"]
+position = Vector2( -152, 624 )
+texture = ExtResource( 10 )
+
+[node name="Grass28" type="Sprite" parent="Grass"]
+position = Vector2( -96, 640 )
+texture = ExtResource( 10 )
+
+[node name="Grass29" type="Sprite" parent="Grass"]
+position = Vector2( -80, 632 )
+texture = ExtResource( 10 )
+
+[node name="Grass30" type="Sprite" parent="Grass"]
+position = Vector2( -96, 624 )
+texture = ExtResource( 10 )
+
+[node name="Grass31" type="Sprite" parent="Grass"]
+position = Vector2( -96, 768 )
+texture = ExtResource( 10 )
+
+[node name="Grass33" type="Sprite" parent="Grass"]
+position = Vector2( -64, 768 )
+texture = ExtResource( 10 )
+
+[node name="Grass34" type="Sprite" parent="Grass"]
+position = Vector2( -104, 760 )
+texture = ExtResource( 10 )
+
+[node name="Grass35" type="Sprite" parent="Grass"]
+position = Vector2( -112, 856 )
+texture = ExtResource( 10 )
+
+[node name="Grass36" type="Sprite" parent="Grass"]
+position = Vector2( -128, 856 )
+texture = ExtResource( 10 )
+
+[node name="Grass37" type="Sprite" parent="Grass"]
+position = Vector2( -144, 888 )
+texture = ExtResource( 10 )
+
+[node name="Grass38" type="Sprite" parent="Grass"]
+position = Vector2( -128, 888 )
+texture = ExtResource( 10 )
+
+[node name="Grass39" type="Sprite" parent="Grass"]
+position = Vector2( -64, 944 )
+texture = ExtResource( 10 )
+
+[node name="Grass40" type="Sprite" parent="Grass"]
+position = Vector2( -48, 944 )
+texture = ExtResource( 10 )
+
+[node name="Grass41" type="Sprite" parent="Grass"]
+position = Vector2( -56, 928 )
+texture = ExtResource( 10 )
+
+[node name="Grass42" type="Sprite" parent="Grass"]
+position = Vector2( -72, 928 )
+texture = ExtResource( 10 )
+
+[node name="Grass43" type="Sprite" parent="Grass"]
+position = Vector2( -176, 976 )
+texture = ExtResource( 10 )
+
+[node name="Grass44" type="Sprite" parent="Grass"]
+position = Vector2( -104, 1064 )
+texture = ExtResource( 10 )
+
+[node name="Grass45" type="Sprite" parent="Grass"]
+position = Vector2( -160, 1096 )
+texture = ExtResource( 10 )
+
+[node name="Grass46" type="Sprite" parent="Grass"]
+position = Vector2( -144, 1096 )
+texture = ExtResource( 10 )
+
+[node name="Grass47" type="Sprite" parent="Grass"]
+position = Vector2( -128, 1096 )
+texture = ExtResource( 10 )
+
+[node name="Grass48" type="Sprite" parent="Grass"]
+position = Vector2( -160, 1112 )
+texture = ExtResource( 10 )
+
+[node name="Grass49" type="Sprite" parent="Grass"]
+position = Vector2( -128, 1216 )
+texture = ExtResource( 10 )
+
+[node name="Grass50" type="Sprite" parent="Grass"]
+position = Vector2( 56, 1192 )
+texture = ExtResource( 10 )
+
+[node name="Grass51" type="Sprite" parent="Grass"]
+position = Vector2( 344, 1184 )
+texture = ExtResource( 10 )
+
+[node name="Grass52" type="Sprite" parent="Grass"]
+position = Vector2( 448, 1128 )
+texture = ExtResource( 10 )
+
+[node name="Grass53" type="Sprite" parent="Grass"]
+position = Vector2( 464, 1128 )
+texture = ExtResource( 10 )
+
+[node name="Grass54" type="Sprite" parent="Grass"]
+position = Vector2( 448, 1144 )
+texture = ExtResource( 10 )
+
+[node name="Grass55" type="Sprite" parent="Grass"]
+position = Vector2( 432, 1144 )
+texture = ExtResource( 10 )
+
+[node name="Grass56" type="Sprite" parent="Grass"]
+position = Vector2( 376, 1040 )
+texture = ExtResource( 10 )
+
+[node name="Grass57" type="Sprite" parent="Grass"]
+position = Vector2( 392, 1040 )
+texture = ExtResource( 10 )
+
+[node name="Grass58" type="Sprite" parent="Grass"]
+position = Vector2( 392, 1024 )
+texture = ExtResource( 10 )
+
+[node name="Grass59" type="Sprite" parent="Grass"]
+position = Vector2( 416, 976 )
+texture = ExtResource( 10 )
+
+[node name="Grass60" type="Sprite" parent="Grass"]
+position = Vector2( 368, 976 )
+texture = ExtResource( 10 )
+
+[node name="Grass32" type="Sprite" parent="Grass"]
+position = Vector2( -80, 768 )
+texture = ExtResource( 10 )
+
+[node name="Grass76" type="Sprite" parent="Grass"]
+position = Vector2( 400, 984 )
+texture = ExtResource( 10 )
+
+[node name="Grass77" type="Sprite" parent="Grass"]
+position = Vector2( 400, 872 )
+texture = ExtResource( 10 )
+
+[node name="Grass78" type="Sprite" parent="Grass"]
+position = Vector2( 480, 848 )
+texture = ExtResource( 10 )
+
+[node name="Grass79" type="Sprite" parent="Grass"]
+position = Vector2( 336, 768 )
+texture = ExtResource( 10 )
+
+[node name="Grass80" type="Sprite" parent="Grass"]
+position = Vector2( 336, 784 )
+texture = ExtResource( 10 )
+
+[node name="Grass81" type="Sprite" parent="Grass"]
+position = Vector2( 352, 720 )
+texture = ExtResource( 10 )
+
+[node name="Grass82" type="Sprite" parent="Grass"]
+position = Vector2( 368, 720 )
+texture = ExtResource( 10 )
+
+[node name="Grass83" type="Sprite" parent="Grass"]
+position = Vector2( 376, 616 )
+texture = ExtResource( 10 )
+
+[node name="Grass84" type="Sprite" parent="Grass"]
+position = Vector2( 384, 616 )
+texture = ExtResource( 10 )
+
+[node name="Grass85" type="Sprite" parent="Grass"]
+position = Vector2( 368, 600 )
+texture = ExtResource( 10 )
+
+[node name="Grass86" type="Sprite" parent="Grass"]
+position = Vector2( 456, 552 )
+texture = ExtResource( 10 )
+
+[node name="Grass87" type="Sprite" parent="Grass"]
+position = Vector2( 368, 448 )
+texture = ExtResource( 10 )
+
+[node name="Grass88" type="Sprite" parent="Grass"]
+position = Vector2( 352, 448 )
+texture = ExtResource( 10 )
+
+[node name="Grass89" type="Sprite" parent="Grass"]
+position = Vector2( 384, 448 )
+texture = ExtResource( 10 )
+
+[node name="Grass90" type="Sprite" parent="Grass"]
+position = Vector2( 368, 464 )
+texture = ExtResource( 10 )
+
+[node name="Grass91" type="Sprite" parent="Grass"]
+position = Vector2( 384, 464 )
+texture = ExtResource( 10 )
+
+[node name="Grass92" type="Sprite" parent="Grass"]
+position = Vector2( 448, 328 )
+texture = ExtResource( 10 )
+
+[node name="Grass93" type="Sprite" parent="Grass"]
+position = Vector2( 464, 328 )
+texture = ExtResource( 10 )
+
+[node name="Grass94" type="Sprite" parent="Grass"]
+position = Vector2( 448, 344 )
+texture = ExtResource( 10 )
+
+[node name="Trees" type="YSort" parent="."]
+
+[node name="Tree2" type="Sprite" parent="Trees"]
+position = Vector2( -40, 24 )
+texture = ExtResource( 11 )
+
+[node name="Tree3" type="Sprite" parent="Trees"]
+position = Vector2( -80, 0 )
+texture = ExtResource( 11 )
+
+[node name="Tree4" type="Sprite" parent="Trees"]
+position = Vector2( -152, 120 )
+texture = ExtResource( 11 )
+
+[node name="Tree5" type="Sprite" parent="Trees"]
+position = Vector2( -104, -64 )
+texture = ExtResource( 11 )
+
+[node name="Tree6" type="Sprite" parent="Trees"]
+position = Vector2( 40, -80 )
+texture = ExtResource( 11 )
+
+[node name="Tree7" type="Sprite" parent="Trees"]
+position = Vector2( 48, -168 )
+texture = ExtResource( 11 )
+
+[node name="Tree8" type="Sprite" parent="Trees"]
+position = Vector2( 208, -96 )
+texture = ExtResource( 11 )
+
+[node name="Tree9" type="Sprite" parent="Trees"]
+position = Vector2( 152, -120 )
+texture = ExtResource( 11 )
+
+[node name="Tree10" type="Sprite" parent="Trees"]
+position = Vector2( 280, -128 )
+texture = ExtResource( 11 )
+
+[node name="Tree11" type="Sprite" parent="Trees"]
+position = Vector2( 440, -72 )
+texture = ExtResource( 11 )
+
+[node name="Tree12" type="Sprite" parent="Trees"]
+position = Vector2( 384, -8 )
+texture = ExtResource( 11 )
+
+[node name="Tree13" type="Sprite" parent="Trees"]
+position = Vector2( 408, 56 )
+texture = ExtResource( 11 )
+
+[node name="Tree14" type="Sprite" parent="Trees"]
+position = Vector2( 472, 168 )
+texture = ExtResource( 11 )
+
+[node name="Tree15" type="Sprite" parent="Trees"]
+position = Vector2( 440, 168 )
+texture = ExtResource( 11 )
+
+[node name="Tree16" type="Sprite" parent="Trees"]
+position = Vector2( 360, 208 )
+texture = ExtResource( 11 )
+
+[node name="Tree17" type="Sprite" parent="Trees"]
+position = Vector2( 448, 248 )
+texture = ExtResource( 11 )
+
+[node name="Tree18" type="Sprite" parent="Trees"]
+position = Vector2( 384, 360 )
+texture = ExtResource( 11 )
+
+[node name="Tree19" type="Sprite" parent="Trees"]
+position = Vector2( 408, 392 )
+texture = ExtResource( 11 )
+
+[node name="Tree20" type="Sprite" parent="Trees"]
+position = Vector2( 488, 504 )
+texture = ExtResource( 11 )
+
+[node name="Tree21" type="Sprite" parent="Trees"]
+position = Vector2( 472, 632 )
+texture = ExtResource( 11 )
+
+[node name="Tree22" type="Sprite" parent="Trees"]
+position = Vector2( 336, 624 )
+texture = ExtResource( 11 )
+
+[node name="Tree23" type="Sprite" parent="Trees"]
+position = Vector2( 408, 760 )
+texture = ExtResource( 11 )
+
+[node name="Tree24" type="Sprite" parent="Trees"]
+position = Vector2( 472, 920 )
+texture = ExtResource( 11 )
+
+[node name="Tree25" type="Sprite" parent="Trees"]
+position = Vector2( 344, 904 )
+texture = ExtResource( 11 )
+
+[node name="Tree26" type="Sprite" parent="Trees"]
+position = Vector2( 472, 1032 )
+texture = ExtResource( 11 )
+
+[node name="Tree27" type="Sprite" parent="Trees"]
+position = Vector2( 440, 1008 )
+texture = ExtResource( 11 )
+
+[node name="Tree30" type="Sprite" parent="Trees"]
+position = Vector2( 240, 1184 )
+texture = ExtResource( 11 )
+
+[node name="Tree31" type="Sprite" parent="Trees"]
+position = Vector2( 128, 1216 )
+texture = ExtResource( 11 )
+
+[node name="Tree32" type="Sprite" parent="Trees"]
+position = Vector2( 184, 1208 )
+texture = ExtResource( 11 )
+
+[node name="Tree33" type="Sprite" parent="Trees"]
+position = Vector2( 32, 1192 )
+texture = ExtResource( 11 )
+
+[node name="Tree34" type="Sprite" parent="Trees"]
+position = Vector2( -88, 1192 )
+texture = ExtResource( 11 )
+
+[node name="Tree35" type="Sprite" parent="Trees"]
+position = Vector2( -120, 1136 )
+texture = ExtResource( 11 )
+
+[node name="Tree36" type="Sprite" parent="Trees"]
+position = Vector2( -200, 1080 )
+texture = ExtResource( 11 )
+
+[node name="Tree37" type="Sprite" parent="Trees"]
+position = Vector2( -120, 952 )
+texture = ExtResource( 11 )
+
+[node name="Tree38" type="Sprite" parent="Trees"]
+position = Vector2( -88, 944 )
+texture = ExtResource( 11 )
+
+[node name="Tree39" type="Sprite" parent="Trees"]
+position = Vector2( -96, 976 )
+texture = ExtResource( 11 )
+
+[node name="Tree40" type="Sprite" parent="Trees"]
+position = Vector2( -176, 912 )
+texture = ExtResource( 11 )
+
+[node name="Tree41" type="Sprite" parent="Trees"]
+position = Vector2( -64, 896 )
+texture = ExtResource( 11 )
+
+[node name="Tree42" type="Sprite" parent="Trees"]
+position = Vector2( -16, 808 )
+texture = ExtResource( 11 )
+
+[node name="Tree43" type="Sprite" parent="Trees"]
+position = Vector2( -104, 808 )
+texture = ExtResource( 11 )
+
+[node name="Tree44" type="Sprite" parent="Trees"]
+position = Vector2( -72, 672 )
+texture = ExtResource( 11 )
+
+[node name="Tree45" type="Sprite" parent="Trees"]
+position = Vector2( -168, 720 )
+texture = ExtResource( 11 )
+
+[node name="Tree46" type="Sprite" parent="Trees"]
+position = Vector2( -184, 552 )
+texture = ExtResource( 11 )
+
+[node name="Tree47" type="Sprite" parent="Trees"]
+position = Vector2( -72, 464 )
+texture = ExtResource( 11 )
+
+[node name="Tree48" type="Sprite" parent="Trees"]
+position = Vector2( -168, 416 )
+texture = ExtResource( 11 )
+
+[node name="Tree49" type="Sprite" parent="Trees"]
+position = Vector2( -200, 392 )
+texture = ExtResource( 11 )
+
+[node name="Tree50" type="Sprite" parent="Trees"]
+position = Vector2( -24, 368 )
+texture = ExtResource( 11 )
+
+[node name="Tree51" type="Sprite" parent="Trees"]
+position = Vector2( -160, 264 )
+texture = ExtResource( 11 )
+
+[node name="Tree52" type="Sprite" parent="Trees"]
+position = Vector2( -40, 184 )
+texture = ExtResource( 11 )
+
+[node name="Tree53" type="Sprite" parent="Trees"]
+position = Vector2( -96, -136 )
+texture = ExtResource( 11 )
+
+[node name="Tree28" type="Sprite" parent="Trees"]
+position = Vector2( 360, 1096 )
+texture = ExtResource( 11 )
+
+[node name="Tree29" type="Sprite" parent="Trees"]
+position = Vector2( 384, 1208 )
+texture = ExtResource( 11 )
