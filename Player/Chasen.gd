@@ -81,4 +81,5 @@ func hide_healthUI():
 	get_node("Camera2D/HealthUI").visible = false
 	
 func song_input():
+	get_node("HBoxContainer").visible = true
 	accept_song_input = true
