@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Friends/Bingus.png" type="Texture" id=1]
 [ext_resource path="res://Shadows/LargeShadow.png" type="Texture" id=2]
 [ext_resource path="res://Friends/Bingus.gd" type="Script" id=3]
+[ext_resource path="res://UI/arrow.png" type="Texture" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 height = 10.0
@@ -26,3 +27,48 @@ texture = ExtResource( 1 )
 position = Vector2( 2, 2 )
 rotation = -1.5708
 shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = -64.0
+margin_right = 74.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="HBoxContainer"]
+visible = false
+position = Vector2( 32, 32 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+
+[node name="Sprite2" type="Sprite" parent="HBoxContainer"]
+visible = false
+position = Vector2( 48, 32 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+
+[node name="Sprite3" type="Sprite" parent="HBoxContainer"]
+visible = false
+position = Vector2( 64, 32 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+
+[node name="Sprite4" type="Sprite" parent="HBoxContainer"]
+visible = false
+position = Vector2( 80, 32 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="Sprite5" type="Sprite" parent="HBoxContainer"]
+visible = false
+position = Vector2( 96, 32 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

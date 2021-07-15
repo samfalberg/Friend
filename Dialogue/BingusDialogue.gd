@@ -5,18 +5,14 @@ var bingusDialogue = ["Bingus: Hello. I am Bingus, singer of songs. What brings 
 	"Bingus: I love birthday parties. They bring me great joy. However, I can’t be friends with just anybody. Music is very close to my heart, so I will only be friends with the musically talented.",
 	"Chasen: I used to play percussion in high school.",
 	"Bingus: Very impressive. I can’t go off of anecdotal evidence alone, though. How about this - If you’re able to sing my famous Bingus Jingle, then I will be your friend.",
+	"Bingus: I'll sing the the jingle first, then you can repeat after me!",
 	"Learn the Bingus Jingle?"]
-	
-var bingusDialogue2 = ["Bingus: First let me demonstrate the Bingus Jingle."]
 
-var bingusDialogue3 = ["Bingus: Now it's your turn!"]
-
-var bingusDialogue4 = ["Bingus: Splendid job! The hearts of Bingii all across the world are filled with the bliss of song.",
-	"Bingus: I would be honored to call you a friend. See you at the party!"]
+var bingusDialogue2 = ["Bingus: Splendid job! The hearts of Bingii all across the world are filled with the bliss of song. I would be honored to call you a friend. See you at the party!"]
 	
 var bingusDenial = ["Bingus: You just ruined my day."]
 	
-var bingusInteraction = [bingusDenial, bingusDialogue, bingusDialogue2, bingusDialogue3, bingusDialogue4]
+var bingusInteraction = [bingusDenial, bingusDialogue, bingusDialogue2]
 
 var postDialogue = ["Bingus: [rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]Can I have a peppermint?[/wave][/rainbow]",
 	"Chasen: You can have a peppermint.", 
@@ -40,6 +36,15 @@ func _ready():
 
 func _on_Button_pressed():
 	get_parent().get_child(0).visible = false
+	Global.emit_signal("bingus_song_start")
+	get_parent().pause_mode = Node.PAUSE_MODE_STOP
+	get_parent().visible = false
+	get_tree().paused = false
+	yield(Global, "chasen_song_complete")
+	get_parent().pause_mode = Node.PAUSE_MODE_PROCESS
+	get_parent().visible = true
+	get_tree().paused = true
+	
 	interaction += 1
 	page = 0
 	set_bbcode(bingusInteraction[interaction][page])
@@ -49,7 +54,7 @@ func _on_Button2_pressed():
 	set_bbcode(bingusInteraction[0][0])
 	set_visible_characters(0)
 	Global.bingusInteractionState = 1
-	Global.bingusPageState = 5
+	Global.bingusPageState = 6
 	Global.bingusStartOnQuestion = true
 	endConversation = true
 	startOnQuestion = true

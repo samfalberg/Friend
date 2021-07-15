@@ -3,7 +3,7 @@
 [ext_resource path="res://Dialogue/BingusDialogue.gd" type="Script" id=1]
 [ext_resource path="res://Dialogue/prstart.ttf" type="DynamicFontData" id=2]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=1]
 size = 4
 font_data = ExtResource( 2 )
 
@@ -37,7 +37,7 @@ __meta__ = {
 [node name="Button" type="Button" parent="VBoxContainer"]
 margin_right = 60.0
 margin_bottom = 11.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 text = "Okay"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]

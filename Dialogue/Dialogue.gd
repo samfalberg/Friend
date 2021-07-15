@@ -59,5 +59,6 @@ func end_conversation():
 				Global.harrowDialogueOver = true
 	# Free the minigame and dialogue box
 	get_parent().get_parent().get_child(get_parent().get_parent().get_child_count() - 1).queue_free()
+	get_parent().get_parent().get_parent().get_child(5).visible = false
 	get_parent().queue_free()
 	get_tree().paused = false

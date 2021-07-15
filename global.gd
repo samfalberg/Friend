@@ -4,6 +4,9 @@ var bingusInteractionState = 1
 var bingusPageState = 0
 var bingusStartOnQuestion = false
 var bingusDialogueOver = false
+signal bingus_song_start
+signal bingus_song_complete
+signal chasen_song_complete
 
 var floppaInteractionState = 1
 var floppaPageState = 0
