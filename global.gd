@@ -12,6 +12,7 @@ var floppaInteractionState = 1
 var floppaPageState = 0
 var floppaStartOnQuestion = false
 var floppaDialogueOver = false
+var floppaGameOver = false
 signal fight_start
 signal fight_complete
 signal show_health

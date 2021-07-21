@@ -15,6 +15,10 @@ var floppaDenial = ["Floppa: Coward . . ."]
 
 var floppaInteraction = [floppaDenial, floppaDialogue, floppaDialogue2]
 
+var floppaGameOver = ["Floppa: You are a Floppa Failure. Come back when you are stronger and less stinky!"]
+
+var gameOverInteraction = [floppaGameOver]
+
 var postDialogue = ["Floppa: I know karate and jiu jitsu and krav maga and taekwondo and kung fu and . . ."]
 
 var postInteraction = [postDialogue]
@@ -46,10 +50,19 @@ func _on_Button_pressed():
 	get_parent().pause_mode = Node.PAUSE_MODE_PROCESS
 	get_parent().visible = true
 	get_tree().paused = true
-
-	interaction += 1
-	page = 0
-	set_bbcode(floppaInteraction[interaction][page])
+	
+	if Global.floppaGameOver:
+		Global.floppaGameOver = false
+		endConversation = true
+		startOnQuestion = true
+		set_dialogue(gameOverInteraction, "Floppa")
+		set_bbcode(gameOverInteraction[0][0])
+		Global.floppaInteractionState = 1
+		Global.floppaPageState = 5
+	else:
+		interaction += 1
+		page = 0
+		set_bbcode(floppaInteraction[interaction][page])
 	set_visible_characters(0)
 
 func _on_Button2_pressed():
