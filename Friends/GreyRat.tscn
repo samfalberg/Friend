@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Shadows/SmallShadow.png" type="Texture" id=1]
 [ext_resource path="res://Friends/GreyRat.png" type="Texture" id=2]
+[ext_resource path="res://Friends/GreyRat.gd" type="Script" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 3.0
+radius = 4.0
 height = 6.0
 
 [node name="GreyRat" type="StaticBody2D"]
+input_pickable = true
+script = ExtResource( 3 )
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( -2, 3 )
@@ -23,3 +26,6 @@ flip_h = true
 position = Vector2( -2, 1 )
 rotation = -1.5708
 shape = SubResource( 1 )
+
+[connection signal="mouse_entered" from="." to="." method="_on_GreyRat_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_GreyRat_mouse_exited"]

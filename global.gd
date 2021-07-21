@@ -31,6 +31,12 @@ var harrowDialogueOver = false
 var carterInteractionState = 1
 var carterPageState = 0
 var carterStartOnQuestion = false
+var carterDialogueOver = false
+var whiteRatFriended = false
+var brownRatFriended = false
+var greyRatFriended = false
+signal speed_friend_start
+signal speed_friend_complete
 
 func _ready():
 	pass # Replace with function body.

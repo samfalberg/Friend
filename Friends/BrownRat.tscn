@@ -4,7 +4,7 @@
 [ext_resource path="res://Friends/BrownRat.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 3.0
+radius = 4.00001
 height = 6.0
 
 [node name="BrownRat" type="StaticBody2D"]
