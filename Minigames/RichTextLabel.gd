@@ -1,7 +1,7 @@
 extends RichTextLabel
 
 var dialogue = ["Laney: Correct! Next question . . .",
-	"Laney: Stupid. What a foolish answer. Begone!",
+	"Laney: Stupid. What a foolish answer. Try again!",
 	"Laney: Welcome to Laney’s Ultra Spectacular Quiz Show. Today’s contestant is Chasen, who wants to be my friend. I am a dog.",
 	"Laney: Chasen, your job is simple. I will ask you a question, and you will be given 4 answers to choose from.",
 	"Laney: If you choose the right answer then you will proceed to the next question.",
@@ -61,6 +61,7 @@ func _on_Button_pressed():
 		set_bbcode(dialogue[0])
 	else:
 		set_bbcode(dialogue[1])
+		page -= 1
 	set_visible_characters(0)
 	get_parent().get_child(0).visible = false
 
@@ -69,6 +70,7 @@ func _on_Button2_pressed():
 		set_bbcode(dialogue[0])
 	else:
 		set_bbcode(dialogue[1])
+		page -= 1
 	set_visible_characters(0)
 	get_parent().get_child(0).visible = false
 
@@ -76,9 +78,14 @@ func _on_Button3_pressed():
 	set_bbcode(dialogue[1])
 	set_visible_characters(0)
 	get_parent().get_child(0).visible = false
+	page -= 1
 
 func _on_Button4_pressed():
 	if page != 9:
 		set_bbcode(dialogue[1])
-	Global.emit_signal("quiz_complete")
-	get_parent().visible = false
+		set_visible_characters(0)
+		get_parent().get_child(0).visible = false
+		page -= 1
+	else:
+		Global.emit_signal("quiz_complete")
+		get_parent().visible = false
