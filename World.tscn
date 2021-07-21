@@ -528,7 +528,7 @@ position = Vector2( 242, 1050 )
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Chasen" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 158, 616 )
+position = Vector2( 158, 432 )
 
 [node name="Bingus" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 72, 240 )
@@ -544,6 +544,9 @@ position = Vector2( 73, 817 )
 
 [node name="Carter" parent="YSort" instance=ExtResource( 14 )]
 position = Vector2( 72, 1006 )
+
+[node name="Cheese" parent="YSort" instance=ExtResource( 17 )]
+position = Vector2( 94, 955 )
 
 [node name="Bushes" type="YSort" parent="."]
 
@@ -1250,6 +1253,3 @@ texture = ExtResource( 11 )
 [node name="Tree29" type="Sprite" parent="Trees"]
 position = Vector2( 384, 1208 )
 texture = ExtResource( 11 )
-
-[node name="Cheese" parent="." instance=ExtResource( 17 )]
-position = Vector2( 94, 955 )

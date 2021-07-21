@@ -40,6 +40,7 @@ func fight():
 			fireball2.position = get_node("FireballPos3").global_position
 		6:
 			Global.emit_signal("fight_complete")
+			timer.stop()
 			phase = 0
 			
 func game_over():
@@ -49,4 +50,3 @@ func game_over():
 func _on_Timer_timeout():
 	phase += 1
 	fight()
-	timer.start()
