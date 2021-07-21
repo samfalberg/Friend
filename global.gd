@@ -16,6 +16,7 @@ signal fight_start
 signal fight_complete
 signal show_health
 signal hide_health
+signal no_health
 
 var laneyInteractionState = 1
 var laneyPageState = 0

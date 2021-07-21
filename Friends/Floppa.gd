@@ -7,6 +7,7 @@ var phase = 0
 
 func _ready():
 	Global.connect("fight_start", self, "fight")
+	Global.connect("no_health", self, "skip_phases")
 	
 func fight():
 	timer.start()
@@ -19,6 +20,9 @@ func fight():
 		1:
 			get_parent().add_child(fireball)
 			fireball.position = get_node("FireballPos1").global_position
+			print(get_node("FireballPos1").global_position)
+			print(fireball.position)
+			print(position)
 		2:
 			get_parent().add_child(fireball)
 			fireball.position = get_node("FireballPos2").global_position
@@ -39,6 +43,9 @@ func fight():
 			fireball2.position = get_node("FireballPos3").global_position
 		6:
 			Global.emit_signal("fight_complete")
+			
+func skip_phases():
+	phase = 5
 
 func _on_Timer_timeout():
 	phase += 1

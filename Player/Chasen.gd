@@ -12,7 +12,6 @@ var note = 1
 var rat_song = 0
 
 func _ready():
-	PlayerStats.connect("no_health", self, "queue_free")
 	Global.connect("show_health", self, "show_healthUI")
 	Global.connect("hide_health", self, "hide_healthUI")
 	Global.connect("bingus_song_complete", self, "song_input")
