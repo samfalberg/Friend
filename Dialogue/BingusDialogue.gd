@@ -4,8 +4,7 @@ var bingusDialogue = ["Bingus: Hello. I am Bingus, singer of songs. What brings 
 	"Chasen: Hello Bingus. I’m Chasen. I don’t have any friends to come to my birthday party, so I’m looking for new friends to invite. Would you like to come?", 
 	"Bingus: I love birthday parties. They bring me great joy. However, I can’t be friends with just anybody. Music is very close to my heart, so I will only be friends with the musically talented.",
 	"Chasen: I used to play percussion in high school.",
-	"Bingus: Very impressive. I can’t go off of anecdotal evidence alone, though. How about this - If you’re able to sing my famous Bingus Jingle, then I will be your friend.",
-	"Bingus: I'll sing the the jingle first, then you can repeat after me!",
+	"Bingus: Very impressive. I can’t go off of anecdotal evidence alone, though. How about this - If you’re able to sing my famous Bingus Jingle, then I will be your friend. I'll sing the the jingle first, then you can repeat after me!",
 	"Learn the Bingus Jingle?"]
 
 var bingusDialogue2 = ["Bingus: Splendid job! The hearts of Bingii all across the world are filled with the bliss of song. I would be honored to call you a friend. See you at the party!"]
@@ -54,7 +53,7 @@ func _on_Button2_pressed():
 	set_bbcode(bingusInteraction[0][0])
 	set_visible_characters(0)
 	Global.bingusInteractionState = 1
-	Global.bingusPageState = 6
+	Global.bingusPageState = 5
 	Global.bingusStartOnQuestion = true
 	endConversation = true
 	startOnQuestion = true

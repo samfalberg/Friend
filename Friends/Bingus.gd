@@ -27,7 +27,6 @@ func sing():
 func _on_Timer_timeout():
 	if note < 6:
 		note += 1
-		print(note)
 		sing()
 	
 func hide_arrows():
