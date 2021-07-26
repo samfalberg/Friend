@@ -40,5 +40,5 @@ var greyRatFriended = false
 signal speed_friend_start
 signal speed_friend_complete
 
-func _ready():
-	pass # Replace with function body.
+func changeScene():
+	get_tree().change_scene("res://Party.tscn")

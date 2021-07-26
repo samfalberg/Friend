@@ -59,6 +59,8 @@ func end_conversation():
 				Global.harrowDialogueOver = true
 			"Carter":
 				Global.carterDialogueOver = true
+				get_parent().get_parent().get_parent().get_parent().get_parent().get_child(10).visible = true
+				get_parent().get_parent().get_parent().get_parent().get_parent().get_child(11).play("FadeOut")
 	# Free the minigame and dialogue box
 	get_parent().get_parent().get_child(get_parent().get_parent().get_child_count() - 1).queue_free()
 	get_parent().get_parent().get_parent().get_child(5).visible = false
