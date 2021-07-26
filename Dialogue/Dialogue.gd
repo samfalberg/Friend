@@ -58,7 +58,6 @@ func end_conversation():
 			"Harrow":
 				Global.harrowDialogueOver = true
 			"Carter":
-				Global.carterDialogueOver = true
 				get_parent().get_parent().get_parent().get_parent().get_parent().get_child(10).visible = true
 				get_parent().get_parent().get_parent().get_parent().get_parent().get_child(11).play("FadeOut")
 	# Free the minigame and dialogue box

@@ -13,16 +13,12 @@ var carterDenial = ["Carter: But I can’t do it all alone . . ."]
 var carterInteraction = [carterDenial, carterDialogue, carterDialogue2]
 	
 func _ready():
-	if Global.carterDialogueOver:
-		print("you did it yay!")
-		get_tree().quit()
-	else:
-		if Global.carterStartOnQuestion:
-			get_parent().get_child(0).visible = true
-		interaction = Global.carterInteractionState
-		page = Global.carterPageState
-		set_dialogue(carterInteraction, "Carter")
-		set_bbcode(carterInteraction[interaction][page])
+	if Global.carterStartOnQuestion:
+		get_parent().get_child(0).visible = true
+	interaction = Global.carterInteractionState
+	page = Global.carterPageState
+	set_dialogue(carterInteraction, "Carter")
+	set_bbcode(carterInteraction[interaction][page])
 	set_visible_characters(0)
 	set_process_input(true)
 
