@@ -10,6 +10,7 @@ var friendName
 
 func _input(_event):
 	if Input.is_mouse_button_pressed(1) && not get_parent().get_child(0).visible:
+		get_parent().get_child(3).play()
 		show_text()
 
 func _on_Timer_timeout():

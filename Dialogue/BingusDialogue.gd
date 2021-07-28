@@ -34,6 +34,7 @@ func _ready():
 	set_process_input(true)
 
 func _on_Button_pressed():
+	get_parent().get_child(3).play()
 	get_parent().get_child(0).visible = false
 	Global.emit_signal("bingus_song_start")
 	get_parent().pause_mode = Node.PAUSE_MODE_STOP
@@ -50,6 +51,7 @@ func _on_Button_pressed():
 	set_visible_characters(0)
 
 func _on_Button2_pressed():
+	get_parent().get_child(3).play()
 	set_bbcode(bingusInteraction[0][0])
 	set_visible_characters(0)
 	Global.bingusInteractionState = 1

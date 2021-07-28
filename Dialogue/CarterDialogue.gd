@@ -23,6 +23,7 @@ func _ready():
 	set_process_input(true)
 
 func _on_Button_pressed():
+	get_parent().get_child(3).play()
 	get_parent().get_child(0).visible = false
 	Global.emit_signal("speed_friend_start")
 	get_tree().paused = false
@@ -40,6 +41,7 @@ func _on_Button_pressed():
 	set_visible_characters(0)
 
 func _on_Button2_pressed():
+	get_parent().get_child(3).play()
 	set_bbcode(carterInteraction[0][0])
 	set_visible_characters(0)
 	Global.carterInteractionState = 1

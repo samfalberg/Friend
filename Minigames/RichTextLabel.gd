@@ -19,6 +19,7 @@ func _ready():
 
 func _input(_event):
 	if Input.is_mouse_button_pressed(1) && not get_parent().get_child(0).visible:
+		get_parent().get_child(3).play()
 		if get_visible_characters() > get_total_character_count():
 			if page < dialogue.size()-1:
 				page += 1
@@ -57,6 +58,7 @@ func set_answers(question):
 			get_parent().get_child(0).get_child(3).text = "All of the above"
 			
 func _on_Button_pressed():
+	get_parent().get_child(3).play()
 	if page == 7:
 		set_bbcode(dialogue[0])
 	else:
@@ -66,6 +68,7 @@ func _on_Button_pressed():
 	get_parent().get_child(0).visible = false
 
 func _on_Button2_pressed():
+	get_parent().get_child(3).play()
 	if page == 6 or page == 8:
 		set_bbcode(dialogue[0])
 	else:
@@ -75,12 +78,14 @@ func _on_Button2_pressed():
 	get_parent().get_child(0).visible = false
 
 func _on_Button3_pressed():
+	get_parent().get_child(3).play()
 	set_bbcode(dialogue[1])
 	set_visible_characters(0)
 	get_parent().get_child(0).visible = false
 	page -= 1
 
 func _on_Button4_pressed():
+	get_parent().get_child(3).play()
 	if page != 9:
 		set_bbcode(dialogue[1])
 		set_visible_characters(0)

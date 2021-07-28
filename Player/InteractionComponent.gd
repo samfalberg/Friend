@@ -17,7 +17,10 @@ func _process(_delta):
 	if (interaction_target != null and Input.is_action_just_pressed("Interact")):
 		# If so, we'll call interaction_interact() if our target supports it
 		if (interaction_target is Friend):
+			get_node("InteractAudio").play()
+			yield(get_node("InteractAudio"), "finished")
 			get_tree().paused = true # Prevent player from moving during dialogue
+			get_node("EndInteractionAudio").play()
 			match interaction_target.name:
 				"Bingus":
 					var dialogue = BINGUS_DIALOGUE.instance()

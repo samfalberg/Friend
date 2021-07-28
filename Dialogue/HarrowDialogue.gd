@@ -57,6 +57,7 @@ func _ready():
 	set_process_input(true)
 
 func _on_Button_pressed():
+	get_parent().get_child(3).play()
 	get_parent().get_child(0).visible = false
 	game.visible = true
 	game.pause_mode = Node.PAUSE_MODE_PROCESS
@@ -72,6 +73,7 @@ func _on_Button_pressed():
 	set_visible_characters(0)
 
 func _on_Button2_pressed():
+	get_parent().get_child(3).play()
 	set_bbcode(harrowInteraction[0][0])
 	set_visible_characters(0)
 	Global.harrowInteractionState = 1
