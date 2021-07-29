@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://TitleCard.gd" type="Script" id=1]
 [ext_resource path="res://Dialogue/prstart.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Dialogue/ChangeScene.gd" type="Script" id=3]
+[ext_resource path="res://Music and Sounds/Menu Select.wav" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 8
@@ -123,5 +124,8 @@ color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
 
 [connection signal="timeout" from="Timer" to="RichTextLabel" method="_on_Timer_timeout"]
