@@ -91,6 +91,7 @@ func _input(_event):
 
 func _on_Hurtbox_area_entered(_area):
 	PlayerStats.health -= 1
+	get_node("HurtAudio").play()
 	
 func show_healthUI():
 	get_node("Camera2D/HealthUI").visible = true
