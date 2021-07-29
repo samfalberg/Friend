@@ -13,9 +13,9 @@ var bingusDenial = ["Bingus: You just ruined my day."]
 	
 var bingusInteraction = [bingusDenial, bingusDialogue, bingusDialogue2]
 
-var postDialogue = ["Bingus: [rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]Can I have a peppermint?[/wave][/rainbow]",
+var postDialogue = ["Bingus: [center][rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]Can I have a peppermint?[/wave][/rainbow][/center]",
 	"Chasen: You can have a peppermint.", 
-	"Bingus: [rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]That's too hot for me. . .[/wave][/rainbow]"]
+	"Bingus: [center][rainbow freq=0.2 sat=10 val=20][wave amp=10 freq=2]That's too hot for me. . .[/wave][/rainbow][/center]"]
 
 var postInteraction = [postDialogue]
 	
