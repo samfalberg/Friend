@@ -42,3 +42,4 @@ signal speed_friend_complete
 
 func changeScene():
 	get_tree().change_scene("res://Party.tscn")
+	get_tree().paused = false

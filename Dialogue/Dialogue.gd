@@ -6,6 +6,7 @@ var interaction = 0
 var page = 0
 var endConversation = false
 var startOnQuestion = false
+var gameDone = false
 var friendName
 
 func _input(_event):
@@ -59,10 +60,14 @@ func end_conversation():
 			"Harrow":
 				Global.harrowDialogueOver = true
 			"Carter":
+				gameDone = true
 				get_parent().get_parent().get_parent().get_parent().get_parent().get_child(10).visible = true
 				get_parent().get_parent().get_parent().get_parent().get_parent().get_child(11).play("FadeOut")
 	# Free the minigame and dialogue box
 	get_parent().get_parent().get_child(get_parent().get_parent().get_child_count() - 1).queue_free()
 	get_parent().get_parent().get_parent().get_child(5).visible = false
 	get_parent().queue_free()
-	get_tree().paused = false
+	if gameDone:
+		get_tree().paused = true
+	else:
+		get_tree().paused = false

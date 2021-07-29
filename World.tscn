@@ -448,7 +448,7 @@ position = Vector2( 242, 1050 )
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Chasen" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 157, 432 )
+position = Vector2( 149, 1002 )
 
 [node name="Bingus" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 72, 240 )
@@ -1180,10 +1180,11 @@ margin_left = -160.0
 margin_top = 656.0
 margin_right = 485.0
 margin_bottom = 1231.0
-color = Color( 0, 0, 0, 1 )
+color = Color( 0, 0, 0, 0.473335 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+pause_mode = 2
 anims/FadeOut = SubResource( 4 )
