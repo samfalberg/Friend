@@ -66,7 +66,6 @@ margin_top = 395.0
 margin_right = 624.0
 margin_bottom = 459.0
 custom_fonts/normal_font = SubResource( 3 )
-scroll_active = false
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false

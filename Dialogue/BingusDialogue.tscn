@@ -55,7 +55,6 @@ margin_right = 296.0
 margin_bottom = 155.0
 custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
-scroll_active = false
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
