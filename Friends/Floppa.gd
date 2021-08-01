@@ -20,24 +20,29 @@ func fight():
 		1:
 			get_parent().add_child(fireball)
 			fireball.position = get_node("FireballPos1").global_position
+			get_node("AudioStreamPlayer").play()
 		2:
 			get_parent().add_child(fireball)
 			fireball.position = get_node("FireballPos2").global_position
+			get_node("AudioStreamPlayer").play()
 		3:
 			get_parent().add_child(fireball)
 			fireball.position = get_node("FireballPos1").global_position
 			get_parent().add_child(fireball2)
 			fireball2.position = get_node("FireballPos3").global_position
+			get_node("AudioStreamPlayer").play()
 		4:
 			get_parent().add_child(fireball)
 			fireball.position = get_node("FireballPos1").global_position
 			get_parent().add_child(fireball2)
 			fireball2.position = get_node("FireballPos2").global_position
+			get_node("AudioStreamPlayer").play()
 		5:
 			get_parent().add_child(fireball)
 			fireball.position = get_node("FireballPos2").global_position
 			get_parent().add_child(fireball2)
 			fireball2.position = get_node("FireballPos3").global_position
+			get_node("AudioStreamPlayer").play()
 		6:
 			Global.emit_signal("fight_complete")
 			timer.stop()
