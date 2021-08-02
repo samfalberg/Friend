@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://World/cheese.png" type="Texture" id=1]
 [ext_resource path="res://World/Cheese.gd" type="Script" id=2]
+[ext_resource path="res://Music and Sounds/Pause.wav" type="AudioStream" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 2.04094
@@ -29,6 +30,9 @@ shape = SubResource( 1 )
 modulate = Color( 0.501961, 1, 0, 1 )
 position = Vector2( -0.594604, -0.445953 )
 shape = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="input_event" from="." to="." method="_on_Cheese_input_event"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

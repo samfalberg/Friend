@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Minigames/Bong.gd" type="Script" id=1]
 [ext_resource path="res://World/bg.png" type="Texture" id=2]
 [ext_resource path="res://World/fill.png" type="Texture" id=3]
 [ext_resource path="res://Dialogue/prstart.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Music and Sounds/Pause.wav" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 7
@@ -44,3 +45,6 @@ text = "You are now high as fuck"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )

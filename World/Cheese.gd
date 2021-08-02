@@ -32,4 +32,6 @@ func allow_cheese_drag():
 
 func _on_Area2D_area_entered(_area):
 	Global.whiteRatFriended = true
+	get_node("AudioStreamPlayer").play()
+	yield(get_node("AudioStreamPlayer"), "finished")
 	queue_free()

@@ -88,6 +88,8 @@ func _input(_event):
 				Global.brownRatFriended = true
 				friending_rat = false
 				accept_song_input = false
+				get_node("SuccessAudio").play()
+				yield(get_node("SuccessAudio"), "finished")
 
 func _on_Hurtbox_area_entered(_area):
 	PlayerStats.health -= 1

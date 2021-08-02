@@ -7,4 +7,5 @@ func _process(_delta):
 		get_node("TextureProgress").value += 10
 		if get_node("TextureProgress").value == 100:
 			get_node("Label").visible = true
+			get_node("AudioStreamPlayer").play()
 			emit_signal("bong_ripped")
