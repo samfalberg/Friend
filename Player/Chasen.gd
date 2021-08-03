@@ -33,7 +33,8 @@ func _physics_process(_delta):
 	elif input_vector.x > 0:
 		$Sprite.set_scale(Vector2(abs($Sprite.get_scale().x), $Sprite.get_scale().y))
 		
-	velocity = move_and_slide(velocity)
+	if not friending_bingus:
+		velocity = move_and_slide(velocity)
 	
 func _input(_event):
 	if not accept_song_input:
