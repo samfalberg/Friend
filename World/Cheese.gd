@@ -30,7 +30,8 @@ func _on_Cheese_input_event(_viewport, event, _shape_idx):
 func allow_cheese_drag():
 	cheese_drag = true
 
-func _on_Area2D_area_entered(_area):
+func _on_Area2D_area_entered(area):
+	area.get_parent().get_child(1).visible = true
 	Global.whiteRatFriended = true
 	get_node("AudioStreamPlayer").play()
 	yield(get_node("AudioStreamPlayer"), "finished")

@@ -21,5 +21,6 @@ func _input(_event):
 		clicks += 1
 		if clicks == 8:
 			Global.greyRatFriended = true
+			get_node("HeartSprite").visible = true
 			get_node("AudioStreamPlayer").play()
 			yield(get_node("AudioStreamPlayer"), "finished")

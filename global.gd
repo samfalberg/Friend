@@ -39,6 +39,7 @@ var brownRatFriended = false
 var greyRatFriended = false
 signal speed_friend_start
 signal speed_friend_complete
+signal brown_rat_friended
 
 func changeScene():
 	get_tree().change_scene("res://Party.tscn")

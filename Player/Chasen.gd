@@ -86,6 +86,7 @@ func _input(_event):
 		
 			if rat_song > 7:
 				Global.brownRatFriended = true
+				Global.emit_signal("brown_rat_friended")
 				friending_rat = false
 				accept_song_input = false
 				get_node("SuccessAudio").play()
