@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Player/Chasen.png" type="Texture" id=1]
 [ext_resource path="res://Player/Chasen.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Music and Sounds/ChasenNote2.wav" type="AudioStream" id=11]
 [ext_resource path="res://Music and Sounds/ChasenNote4.wav" type="AudioStream" id=12]
 [ext_resource path="res://Music and Sounds/ChasenNote3.wav" type="AudioStream" id=13]
+[ext_resource path="res://Music and Sounds/WrongNote.wav" type="AudioStream" id=14]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.99999
@@ -118,6 +119,9 @@ stream = ExtResource( 13 )
 
 [node name="Note4" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
+
+[node name="WrongNote" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 

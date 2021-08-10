@@ -49,28 +49,28 @@ func _input(_event):
 						get_node("HBoxContainer/Sprite").visible = true
 						get_node("Note1").play()
 					else:
-						print("wrong note!")
+						get_node("WrongNote").play()
 				2:
 					if Input.is_action_just_pressed("note_left"):
 						note += 1
 						get_node("HBoxContainer/Sprite2").visible = true
 						get_node("Note2").play()
 					else:
-						print("wrong note!")
+						get_node("WrongNote").play()
 				3:
 					if Input.is_action_just_pressed("note_right"):
 						note += 1
 						get_node("HBoxContainer/Sprite3").visible = true
 						get_node("Note3").play()
 					else:
-						print("wrong note!")
+						get_node("WrongNote").play()
 				4:
 					if Input.is_action_just_pressed("note_down"):
 						note += 1
 						get_node("HBoxContainer/Sprite4").visible = true
 						get_node("Note4").play()
 					else:
-						print("wrong note!")
+						get_node("WrongNote").play()
 				5:
 					if Input.is_action_just_pressed("note_up"):
 						get_node("HBoxContainer/Sprite5").visible = true
@@ -80,7 +80,7 @@ func _input(_event):
 						yield(get_node("Note1"), "finished")
 						Global.emit_signal("chasen_song_complete")
 					else:
-						print("wrong note!")
+						get_node("WrongNote").play()
 		elif friending_rat:
 			if Input.is_action_just_pressed("note_up"):
 				rat_song += 1
