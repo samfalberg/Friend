@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Shadows/SmallShadow.png" type="Texture" id=1]
 [ext_resource path="res://Friends/GreyRat.png" type="Texture" id=2]
 [ext_resource path="res://Friends/GreyRat.gd" type="Script" id=3]
 [ext_resource path="res://Music and Sounds/Pause.wav" type="AudioStream" id=4]
 [ext_resource path="res://World/heart.png" type="Texture" id=5]
+[ext_resource path="res://Music and Sounds/Squeak.wav" type="AudioStream" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.0
@@ -35,8 +36,11 @@ position = Vector2( -2, 1 )
 rotation = -1.5708
 shape = SubResource( 1 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Success" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+
+[node name="Squeak" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 
 [connection signal="mouse_entered" from="." to="." method="_on_GreyRat_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_GreyRat_mouse_exited"]

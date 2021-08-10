@@ -18,9 +18,11 @@ func _on_GreyRat_mouse_exited():
 
 func _input(_event):
 	if Input.is_mouse_button_pressed(1) && can_friend && mouse_on_rat:
-		clicks += 1
-		if clicks == 8:
+		if clicks < 8:
+			clicks += 1
+			get_node("Squeak").play()
+		elif clicks == 8:
 			Global.greyRatFriended = true
 			get_node("HeartSprite").visible = true
-			get_node("AudioStreamPlayer").play()
-			yield(get_node("AudioStreamPlayer"), "finished")
+			get_node("Success").play()
+			yield(get_node("Success"), "finished")
