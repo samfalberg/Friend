@@ -33,8 +33,9 @@ _global_script_class_icons={
 [application]
 
 config/name="Friend"
+config/description="A game for friends :)"
 run/main_scene="res://Dialogue/TitleCard.tscn"
-config/icon="res://icon.png"
+config/windows_native_icon="res://Chasen.ico"
 
 [autoload]
 
