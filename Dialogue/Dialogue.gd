@@ -11,7 +11,6 @@ var friendName
 
 func _input(_event):
 	if Input.is_mouse_button_pressed(1) && not get_parent().get_child(0).visible:
-		get_parent().get_child(3).play()
 		show_text()
 
 func _on_Timer_timeout():
@@ -24,29 +23,29 @@ func set_dialogue(script, friend):
 func show_text():
 	if endConversation:
 		if get_visible_characters() < get_total_character_count():
-			set_visible_characters(get_total_character_count())
+			pass
 		else:
+			get_parent().get_child(3).play()
 			end_conversation()
 		return
 		
 	if get_visible_characters() >= get_total_character_count():
-			if page < dialogue[interaction].size() - 1:
-				page += 1
-				set_bbcode(dialogue[interaction][page])
-				set_visible_characters(0)
-			else:
-				if interaction < dialogue.size() - 1:
-					if interaction == 1:
-						get_parent().get_child(0).visible = true
-					else:
-						page = 0
-						interaction += 1
-						set_bbcode(dialogue[interaction][page])
-						set_visible_characters(0)
+		get_parent().get_child(3).play()
+		if page < dialogue[interaction].size() - 1:
+			page += 1
+			set_bbcode(dialogue[interaction][page])
+			set_visible_characters(0)
+		else:
+			if interaction < dialogue.size() - 1:
+				if interaction == 1:
+					get_parent().get_child(0).visible = true
 				else:
-					end_conversation()
-	else:
-		set_visible_characters(get_total_character_count())
+					page = 0
+					interaction += 1
+					set_bbcode(dialogue[interaction][page])
+					set_visible_characters(0)
+			else:
+				end_conversation()
 
 func end_conversation():
 	if not startOnQuestion:

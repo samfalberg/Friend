@@ -19,8 +19,8 @@ func _ready():
 
 func _input(_event):
 	if Input.is_mouse_button_pressed(1) && not get_parent().get_child(0).visible:
-		get_parent().get_child(3).play()
 		if get_visible_characters() > get_total_character_count():
+			get_parent().get_child(3).play()
 			if page < dialogue.size()-1:
 				page += 1
 				set_bbcode(dialogue[page])
@@ -28,8 +28,6 @@ func _input(_event):
 				if page > 5:
 					get_parent().get_child(0).visible = true
 					set_answers(page)
-		else:
-			set_visible_characters(get_total_character_count())
 
 func _on_Timer_timeout():
 	set_visible_characters(get_visible_characters()+1)

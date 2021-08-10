@@ -13,7 +13,6 @@ func _ready():
 
 func _input(_event):
 	if Input.is_mouse_button_pressed(1) and not textDone:
-#		get_parent().get_child(5).play()
 		if get_visible_characters() > get_total_character_count():
 			get_parent().get_child(5).play()
 			if page < introText.size()-1:
@@ -26,8 +25,6 @@ func _input(_event):
 				get_parent().get_child(4).visible = true
 				get_parent().get_child(3).play("FadeOut")
 				textDone = true
-#		else:
-#			set_visible_characters(get_total_character_count())
 
 func _on_Timer_timeout():
 	set_visible_characters(get_visible_characters() + 1)
