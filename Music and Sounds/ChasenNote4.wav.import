@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ChasenNote4.wav-364189864cadc2965111c0e9956dbe76.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/ChasenNote4.wav"
+dest_files=[ "res://.import/ChasenNote4.wav-364189864cadc2965111c0e9956dbe76.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BingusJingle.wav-0577addc67a17104f2620fa8ca410777.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/BingusJingle.wav"
+dest_files=[ "res://.import/BingusJingle.wav-0577addc67a17104f2620fa8ca410777.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

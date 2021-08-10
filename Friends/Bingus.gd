@@ -12,6 +12,7 @@ func sing():
 	match note:
 		1:
 			get_node("HBoxContainer/Sprite").visible = true
+			get_node("AudioStreamPlayer").play()
 		2:
 			get_node("HBoxContainer/Sprite2").visible = true
 		3:
@@ -23,6 +24,7 @@ func sing():
 		6:
 			Global.emit_signal("bingus_song_complete")
 			timer.one_shot = true
+			get_node("AudioStreamPlayer").stop()
 	
 func _on_Timer_timeout():
 	if note < 6:

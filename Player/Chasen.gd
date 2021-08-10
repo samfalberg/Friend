@@ -47,24 +47,28 @@ func _input(_event):
 					if Input.is_action_just_pressed("note_up"):
 						note += 1
 						get_node("HBoxContainer/Sprite").visible = true
+						get_node("Note1").play()
 					else:
 						print("wrong note!")
 				2:
 					if Input.is_action_just_pressed("note_left"):
 						note += 1
 						get_node("HBoxContainer/Sprite2").visible = true
+						get_node("Note2").play()
 					else:
 						print("wrong note!")
 				3:
 					if Input.is_action_just_pressed("note_right"):
 						note += 1
 						get_node("HBoxContainer/Sprite3").visible = true
+						get_node("Note3").play()
 					else:
 						print("wrong note!")
 				4:
 					if Input.is_action_just_pressed("note_down"):
 						note += 1
 						get_node("HBoxContainer/Sprite4").visible = true
+						get_node("Note4").play()
 					else:
 						print("wrong note!")
 				5:
@@ -72,18 +76,24 @@ func _input(_event):
 						get_node("HBoxContainer/Sprite5").visible = true
 						accept_song_input = false
 						friending_bingus = false
+						get_node("Note1").play()
+						yield(get_node("Note1"), "finished")
 						Global.emit_signal("chasen_song_complete")
 					else:
 						print("wrong note!")
 		elif friending_rat:
 			if Input.is_action_just_pressed("note_up"):
 				rat_song += 1
+				get_node("Note1").play()
 			elif Input.is_action_just_pressed("note_down"):
 				rat_song += 1
+				get_node("Note4").play()
 			elif Input.is_action_just_pressed("note_left"):
 				rat_song += 1
+				get_node("Note2").play()
 			elif Input.is_action_just_pressed("note_right"):
 				rat_song += 1
+				get_node("Note3").play()
 		
 			if rat_song > 7:
 				Global.brownRatFriended = true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ChasenNote3.wav-df8b1f86d345cea0c4d2c923b72df7f9.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/ChasenNote3.wav"
+dest_files=[ "res://.import/ChasenNote3.wav-df8b1f86d345cea0c4d2c923b72df7f9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
